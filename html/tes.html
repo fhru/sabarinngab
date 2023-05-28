@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <style type="text/css">
+        #hasil {
+            background: black;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hasil">
+
+    </div>
+    <form id="form" onsubmit="return false;">
+        <input style="position:absolute; top:10%; left:5%; width:40%;" type="text" id="input_alas" />
+        <input style="position:absolute; top:20%; left:5%; width:40%;" type="text" id="input_tinggi" />
+        <input style="position:absolute; top: 30%; left:5%; width:40%;" type="submit" onclick="convert()" />
+    </form>
+
+    <script>
+        function convert() {
+            var alas = document.getElementById("input_alas").value;
+            var tinggi = document.getElementById("input_tinggi").value;
+
+            var luas = 1 / 2 * alas * tinggi;
+
+            document.getElementById("hasil").innerHTML = luas + "cm^2";
+        }
+    </script>
+</body>
+
+</html>
