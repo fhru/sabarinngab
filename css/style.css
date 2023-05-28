@@ -20,6 +20,7 @@
 
 .poppins {
     font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
 }
 
 .body {
@@ -39,6 +40,14 @@
         radial-gradient(at 99% 0%, hsla(278, 100%, 68%, 0.43) 0px, transparent 50%);
 }
 
+.third-body {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 100% 100%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%),
+        radial-gradient(at 31% 37%, hsla(226, 100%, 50%, 0.51) 0px, transparent 50%);
+}
+
 .main-body {
     position: relative;
     z-index: 1;
@@ -52,11 +61,12 @@
 .ingfo {
     display: block;
     width: 100%;
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 38px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .heroimg {
@@ -69,6 +79,36 @@
     object-fit: cover;
 }
 
+.pengertian-box {
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.kml-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.kml-box-2 {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 
 
@@ -92,7 +132,11 @@
         transform: rotate(0) scale(1);
     }
 
+    50% {
+        transform: rotate(180deg) scale(.7);
+    }
+
     100% {
-        transform: rotate(360deg) scale(.8);
+        transform: rotate(360deg) scale(1);
     }
 }
