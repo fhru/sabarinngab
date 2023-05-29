@@ -118,10 +118,18 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.swiper-pagination-bullet {
+    background-color: white !important;
+}
 
+.swiper-pagination-bullet-active {
+    background-color: #ff07d2 !important;
+}
 
-
-
+.input {
+    border-radius: 12px;
+    padding: 12px;
+}
 
 
 #particles-js {
