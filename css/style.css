@@ -48,6 +48,14 @@
         radial-gradient(at 31% 37%, hsla(226, 100%, 50%, 0.51) 0px, transparent 50%);
 }
 
+.fourth-body {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 20% 100%, hsla(182, 100%, 50%, 0.322) 0px, transparent 50%),
+        radial-gradient(at 99% 0%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
+}
+
 .main-body {
     position: relative;
     z-index: 1;
