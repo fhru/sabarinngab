@@ -64,6 +64,14 @@ body {
         radial-gradient(at 99% 0%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
 }
 
+.fifth-body {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 20% 0%, hsla(182, 100%, 50%, 0.32) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(240, 100%, 70%, 0.59) 0px, transparent 50%);
+}
+
 .main-body {
     position: relative;
     z-index: 1;
@@ -118,10 +126,9 @@ body {
 
 .kml-box-2 {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(146deg, #000000, #663f9d, #00008e);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -139,6 +146,14 @@ body {
     padding: 8px;
 }
 
+.resultan-box {
+    width: 100%;
+    background: linear-gradient(146deg, #000000, #008a8e, #663f9d);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 
 
@@ -165,5 +180,19 @@ body {
 
     100% {
         transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }

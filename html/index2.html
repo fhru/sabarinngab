@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/input.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
     <script src="../js/jquery.js"></script>
 </head>
 
@@ -190,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="swiper py-4">
+                <div class="swiper swiper1 py-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="row justify-content-center ">
@@ -273,7 +274,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="kml-box p-5 mt-5" data-aos="zoom-out-left">
+                <div class="kml-box p-5 mt-5" data-aos="zoom-in">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="text-white-50">
@@ -308,12 +309,77 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
 
     <div class="fourth-body">
+        <div class="container py-5">
+            <div class="resultan">
+                <div class="fs-1 text-white text-center mb-5">
+                    RUMUS RESULTAN
+                    <br>
+                    MEDAN LISTRIK
+                </div>
+                <div class="row gx-5 mt-5">
+                    <div class="col-lg-6">
+                        <div class="kml-box p-5 text-white-50">
+                            Nah temen-temen, kuat medan listrik di suatu titik akibat beberapa muatan sumber diperoleh
+                            dari
+                            jumlah vector (resultan)
+                            dari vector-vector kuat medan listrik yang dihasilkan oleh setiap muatan sumber di titik
+                            tersebut.
+                            <br><br>
+                            Ada beberapa keadaan muatan sumber dengan muataan ujinya, dan itu nanti memengaruhi
+                            bagaimana
+                            kita mencari nilai atau
+                            resultan medan listriknya, penjelasannya sebagai berikut :
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="swiper swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="resultan-box p-5 text-white-50">
+                                        <div class="text-white text-center fs-5">
+                                            Resultan Medan Listrik Segaris
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <img src="../assets/segaris.jpg" alt="" class="img-fluid rounded">
+                                        </div>
+                                        <div class="text-center">
+                                            Penulisan sistematisnya yaitu:
+                                            <em class="fs-3 text-white">
+                                                $${ E = k(\frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2})}$$
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="resultan-box p-5 text-white-50">
+                                        <div class="text-white text-center fs-5">
+                                            Resultan Medan Listrik Tak Segaris
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <img src="../assets/taksegaris.jpg" alt="" class="img-fluid rounded">
+                                        </div>
+                                        <div class="text-center">
+                                            Penulisan sistematisnya yaitu:
+                                            <em class="fs-3 text-white">
+                                                $${ E_A = \sqrt{E_1^2 + E_2^2 + 2\times E_1 E_2 \cos\theta} }$$
+                                            </em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth-body">
         <div class="container py-5">
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
@@ -377,7 +443,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper1', {
             slidesPerView: 2,
             spaceBetween: 20,
             mousewheel: true,
@@ -385,13 +451,18 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            loop: true,
+            // loop: true,
             direction: "horizontal",
             grabCursor: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false
             },
+        });
+
+        var asu = new Swiper('.swiper2', {
+            effect: "cards",
+            grabCursor: true,
         });
         AOS.init();
 
