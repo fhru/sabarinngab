@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas Fisika Dasar</title>
     <link rel="stylesheet" href="css/style.css?v=3">
     <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/button.css">
@@ -468,6 +468,17 @@
         });
         AOS.init();
 
+        // Mencegah zoom saat mousewheel atau gesture zoom terjadi
+        window.addEventListener('wheel', function (event) {
+            if (event.ctrlKey === true) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        // Mencegah zoom saat menggunakan gesture zoom pada perangkat mobile
+        window.addEventListener('gesturestart', function (event) {
+            event.preventDefault();
+        }, { passive: false });
 
     </script>
 </body>
