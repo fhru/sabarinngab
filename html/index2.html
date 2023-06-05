@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisika Dasar</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css?v=3">
     <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
-        integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="../js/jquery.js"></script>
 </head>
 
 <body>
-    <div class="body border border-danger">
-        <div class="container border border-primary">
-            <div class="header border py-3">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <div class="body">
+        <div class="container">
+            <div class="header py-3">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">FisDas</a>
@@ -27,12 +32,12 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link text-lg-start text-center" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-lg-start text-center" href="#">Features</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item text-lg-start text-center">
                                     <a class="nav-link" href="#">Pricing</a>
                                 </li>
                             </ul>
@@ -40,32 +45,358 @@
                     </div>
                 </nav>
             </div>
-            <div class="main-body border text-white p-3">
+            <div class="main-body text-white p-3">
                 <div class="row">
-                    <div class="col-lg-6 border">
+                    <div class="col-lg-6">
                         <div class="d-flex h-100 flex-column justify-content-center">
-                            <div class="fontsize-1 mb-4 fw-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit.
+                            <div class="fontsize-1 mb-4 fw-semibold conthrax">Selamat datang di Medan Listrik
                             </div>
-                            <div class="fontsize-2 mb-4 text-white-50">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                                Expedita rem ab,
-                                illum non alias repudiandae?</div>
-                            <div>
-                                <a href="#" class="btn btn-primary">Get Started</a>
+                            <div class="fontsize-2 mb-4 text-white-50 poppins">Kami akan membahas konsep-konsep dasar,
+                                fenomena
+                                menarik, dan aplikasi praktis dari medan listrik. Dari penjelasan
+                                sederhana hingga topik yang lebih mendalam.</div>
+                            <div class="mt-4">
+                                <a href="#" class="btn" type="button">
+                                    <strong>MULAI</strong>
+                                    <div id="container-stars">
+                                        <div id="stars"></div>
+                                    </div>
+
+                                    <div id="glow">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 border">
-                        <img src="../assets/atom.png" alt="" class="img-fluid">
+                    <div class="col-lg-6" data-tilt data-tilt-full-page-listening>
+                        <img src="../assets/atom.png" alt="" class="img-fluid heroimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-body">
+        <div class="container py-5">
+            <div class="ingfo p-5 text-white" data-aos="zoom-out-up">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-2 p-1">
+                        <div class="text-center">
+                            <img src="../assets/james.jpg" alt="" class="user-img rounded-circle">
+                            <div class="small text-white mt-2">
+                                James Clerk<br>Maxwell
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-1">
+                        <div class="small text-white-50 poppins">
+                            "Medan listrik adalah keadaan di sekitar benda bermuatan listrik atau penghantar listrik
+                            yang
+                            mempengaruhi muatan lainnya
+                            di sekitarnya. Medan listrik didefinisikan sebagai gaya listrik yang dialami oleh suatu
+                            muatan uji positif kecil yang
+                            ditempatkan dalam medan tersebut."
+                        </div>
+                    </div>
+                    <div class="col-lg-2 p-1">
+                        <div class="text-center">
+                            <img src="../assets/faraday.jpeg" alt="" class="user-img rounded-circle">
+                            <div class="small text-white mt-2">
+                                Michael Faraday
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-1">
+                        <div class="small text-white-50 poppins">
+                            "Medan listrik adalah suatu kondisi atau keadaan dalam ruang di mana muatan listrik akan
+                            merasakan gaya listrik yang
+                            disebabkan oleh adanya muatan lain dalam ruang tersebut."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pengertian pt-5">
+                <div class="row">
+                    <div class="text-center mb-4">
+                        <div class="fs-1 text-white">Pengertian</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="pengertian-box mt-4 p-5 text-white-50" data-aos="zoom-out-up">
+                            <div class=" row align-items-center">
+                                <div class="col-lg-8">
+                                    <div class="fs-3 text-white">
+                                        Tahukah kalian apa itu medan listrik?
+                                    </div>
+                                    <br>
+                                    Medan listrik yaitu ruang yang terletak di sekitar muatan listrik. Dimana ketika
+                                    sebuah
+                                    muatan uji ditempatkan dalam
+                                    ruang di dekat tongkat yang bermuatan, maka sebuah gaya eletrostatis akan bekerja
+                                    pada
+                                    muatan uji.
+                                    <br>
+                                    <br>
+                                    Inilah yang dikatakan dengan medan listrik, yakni dalam ruang tersebut.
+                                    <br>
+                                    <br>
+                                    Medan listrik ini digambarkan dengan garis gaya listrik yang arahnya keluar/menjauhi
+                                    muatan
+                                    positif dan mendekati muatan
+                                    negatif .
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="text-center">
+                                        <img src="../assets/medanlistrik.png" alt="" class="img-fluid" data-tilt
+                                            data-tilt-full-page-listening>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="third-body">
+        <div class="container py-5">
+            <div class="kuat-medan-listrik py-3">
+                <div class="row pb-5">
+                    <div class="col-lg-4 fs-1 text-white ps-5">
+                        KUAT MEDAN LISTRIK
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="kml-box p-5 text-white-50" data-aos="zoom-in-left">
+                            Oke, temen-temen kuat medan listrik dapat diketahui dengan penulisan sistematis berikut :
+                            <div class="text-center text-white fs-2 my-3">
+                                <em>E = f/q</em>
+                            </div>
+                            Dimana
+                            <br>
+                            E = kuat medan listrik (N/C)
+                            <br>
+                            F = gaya coloumb (N)
+                            <br>
+                            q = muatan uji (C)
+                            <br>
+                            <br>
+                            Arah gaya yang ditimbulkan ketika muatan uji didekatkan dengan muatan sumber akan
+                            berbeda-beda, tergantung dengan jenis
+                            muatannya.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper py-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center ">
+                                <div class="col text-white-50">
+                                    <div class="kml-box-2 p-4">
+                                        <span class="fs-2 text-white">1.</span> Bila muatan sumber positif dan
+                                        muatan
+                                        uji
+                                        positif, maka arah gaya coloumbnya akan
+                                        menjauh
+                                        dari muatan uji dan muatan
+                                        sumber.
+                                        <br>
+                                        <div class="text-center mt-4">
+                                            <img src="../assets/rumus1.jpg" alt=""
+                                                class="img-fluid rounded-4 rumus-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center ">
+                                <div class="col text-white-50">
+                                    <div class="kml-box-2 p-4">
+                                        <span class="fs-2 text-white">2.</span> Bila muatan sumber positif dan muatan
+                                        uji
+                                        negatif, maka gaya coloumb akan mendekati
+                                        muatan sumber. Berikut gambarnya
+                                        :
+                                        <br>
+                                        <div class="text-center mt-4">
+                                            <img src="../assets/rumus2.jpg" alt=""
+                                                class="img-fluid rounded-4 rumus-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center ">
+                                <div class="col text-white-50">
+                                    <div class="kml-box-2 p-4">
+                                        <span class="fs-2 text-white">3.</span> Bila muatan sumber negatif dan muatan
+                                        uji
+                                        postif, maka gaya coloumb akan mendekati
+                                        muatan sumber. Berikut gambarnya :
+                                        <br>
+                                        <div class="text-center mt-4">
+                                            <img src="../assets/rumus3.jpg" alt=""
+                                                class="img-fluid rounded-4 rumus-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center ">
+                                <div class="col text-white-50">
+                                    <div class="kml-box-2 p-4">
+                                        <span class="fs-2 text-white">4.</span> Bila muatan sumber negatif dan muatan
+                                        uji
+                                        juga negatif,
+                                        maka gaya
+                                        coloumb akan
+                                        menjauhi muatan uji. Berikut gambarnya
+                                        :
+                                        <br>
+                                        <div class="text-center mt-4">
+                                            <img src="../assets/rumus4.jpg" alt=""
+                                                class="img-fluid rounded-4 rumus-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="kml-box p-5 mt-5" data-aos="zoom-out-left">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="text-white-50">
+                                Penulisan sistematis untuk gaya coloumb, yaitu :
+                                <div class="text-center text-white fs-2 my-3">
+                                    <em>F = k ((Q.q)/r <sup>2</sup>)</em>
+                                </div>
+                                Dimana
+                                <br>
+                                F = gaya coloumb (N)
+                                <br>
+                                Q = muatan sumber (C )
+                                <br>
+                                r = jarak antara muatan uji terhadap muatan sumber (m)
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-white-50">
+                                maka, penulisan sistematis kuat medan listrik yaitu :
+                                <div class="text-center text-white fs-2 my-3">
+                                    <em>E = k (Q/r <sup>2</sup>)</em>
+                                </div>
+                                Dimana
+                                <br>
+                                E = besar kuat medan listrik (N/C)
+                                <br>
+                                Q = muatan sumber (C )
+                                <br>
+                                r = jarak antara muatan uji terhadap muatan sumber (m)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="fourth-body">
+        <div class="container py-5">
+            <div class="kuat-medan-listrik py-3">
+                <div class="row pb-5">
+                    <div class="col-lg-4 fs-1 text-white ps-5">
+                        MENCARI KUAT MEDAN LISTRIK
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="kml-box p-5 text-white-50">
+                            rumus mencari kuat medan listrik yaitu :
+                            <div class="text-center text-white fs-2 my-3">
+                                <em>E = f/q atau E = k . q/r<sup>2</sup></em>
+                            </div>
+                            <div class="text-center">
+                                <form id="form" onsubmit="return false;">
+                                    Masukkan muatan listrik :
+                                    <br>
+                                    <input class="input" type="text" id="input_muatan" placeholder="muatan" />
+                                    <br>
+                                    <br>
+                                    Masukkan jarak :
+                                    <br>
+                                    <input class="input" type="text" id="input_jarak" placeholder="jarak" />
+                                    <br>
+                                    <br>
+                                    <div class="mt-4 d-flex justify-content-center">
+                                        <button type="submit" onclick="convert()" class="btn" type="button">
+                                            <strong>SUBMIT</strong>
+                                            <div id="container-stars">
+                                                <div id="stars"></div>
+                                            </div>
+
+                                            <div id="glow">
+                                                <div class="circle"></div>
+                                                <div class="circle"></div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <br>
+                            <br>
+                            Kuat medan listrik : <span id="hasil" class="text-white"></span>
+                            <br>
+                            <br>
+                            Arah medan listrik : <span id="arah-arus" class="text-white"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/rumus.js"></script>
+    <script src="../js/app.js"></script>
     <script src="../boostrap/js/bootstrap.min.js"></script>
+    <script src="../js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            direction: "horizontal",
+            grabCursor: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+        });
+        AOS.init();
+
+
+    </script>
 </body>
 
 </html>

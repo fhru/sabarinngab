@@ -124,7 +124,7 @@
                     <div class="col">
                         <div class="pengertian-box mt-4 p-5 text-white-50">
                             <div class="row align-items-center">
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <div class="fs-3 text-white">
                                         Tahukah kalian apa itu medan listrik?
                                     </div>
@@ -145,7 +145,7 @@
                                     positif dan mendekati muatan
                                     negatif .
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <div class="text-center">
                                         <img src="../assets/medanlistrik.png" alt="" class="img-fluid">
                                     </div>
@@ -191,7 +191,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="row justify-content-center ">
-                                <div class="col-lg-12 text-white-50">
+                                <div class="col text-white-50">
                                     <div class="kml-box-2 p-4">
                                         <span class="fs-2 text-white">1.</span> Bila muatan sumber positif dan
                                         muatan
@@ -211,7 +211,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="row justify-content-center ">
-                                <div class="col-lg-12 text-white-50">
+                                <div class="col text-white-50">
                                     <div class="kml-box-2 p-4">
                                         <span class="fs-2 text-white">2.</span> Bila muatan sumber positif dan muatan
                                         uji
@@ -229,7 +229,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="row justify-content-center ">
-                                <div class="col-lg-12 text-white-50">
+                                <div class="col text-white-50">
                                     <div class="kml-box-2 p-4">
                                         <span class="fs-2 text-white">3.</span> Bila muatan sumber negatif dan muatan
                                         uji
@@ -246,7 +246,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="row justify-content-center ">
-                                <div class="col-lg-12 text-white-50">
+                                <div class="col text-white-50">
                                     <div class="kml-box-2 p-4">
                                         <span class="fs-2 text-white">4.</span> Bila muatan sumber negatif dan muatan
                                         uji
@@ -337,14 +337,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 30,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
             loop: true,
             direction: "horizontal",
-            centeredSlides: true,
             grabCursor: true,
             autoplay: {
                 delay: 3000,
