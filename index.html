@@ -129,8 +129,8 @@
                         <div class="pengertian-box mt-4 p-5 text-white-50" data-aos="zoom-out-up" data-aos-delay="200">
                             <div class=" row align-items-center">
                                 <div class="col-lg-8">
-                                    <div class="fs-3 text-white">
-                                        Tahukah kalian apa itu medan listrik?
+                                    <div class="fs-3 text-white" id="pengertian-container">
+                                        <span id="pengertian-title"></span>
                                     </div>
                                     <br>
                                     Medan listrik yaitu ruang yang terletak di sekitar muatan listrik. Dimana ketika
@@ -166,8 +166,8 @@
         <div class="container py-5">
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
-                    <div class="col-lg-4 fs-1 text-white ps-5">
-                        KUAT MEDAN LISTRIK
+                    <div class="col-lg-4 fs-1 text-white ps-5" id="kml-container">
+                        <span id="kml-title"></span>
                     </div>
                     <div class="col-lg-8">
                         <div class="kml-box p-5 text-white-50" data-aos="zoom-in-left" data-aos-delay="200">
@@ -472,9 +472,43 @@
             typeSpeed: 50,
             backSpeed: 25,
             backDelay: 10000,
-            startDelay: 1000,
+            startDelay: 700,
             loop: true
         });
+
+
+
+        // Function to start the Typed.js animation
+        function startTypedAnimation() {
+            var typed2 = new Typed('#pengertian-title', {
+                strings: ['Tahukah kalian apa itu medan listrik?'],
+                typeSpeed: 50,
+                backSpeed: 25,
+                startDelay: 700,
+                loop: false
+            });
+        }
+
+        // Intersection Observer callback function
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // If the animation container is in the viewport, start the animation
+                    startTypedAnimation();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Create an Intersection Observer instance
+        var observer = new IntersectionObserver(handleIntersection);
+
+        // Target the animation container
+        var animationContainer = document.getElementById('pengertian-container');
+
+        // Start observing the animation container
+        observer.observe(animationContainer);
+
 
     </script>
 </body>
