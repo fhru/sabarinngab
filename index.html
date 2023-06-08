@@ -50,7 +50,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="d-flex h-100 flex-column justify-content-center">
-                            <div class="fontsize-1 mb-4 fw-semibold conthrax">Selamat datang di Medan Listrik
+                            <div class="fontsize-1 mb-4 fw-semibold conthrax">
+                                <span id="element"></span>
                             </div>
                             <div class="fontsize-2 mb-4 text-white-50 poppins">Kami akan membahas konsep-konsep dasar,
                                 fenomena
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="../assets/atom.png" alt="" class="img-fluid heroimg">
+                        <img src="assets/atom.png" alt="" class="img-fluid heroimg">
                     </div>
                 </div>
             </div>
@@ -84,7 +85,7 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-2 p-1">
                         <div class="text-center">
-                            <img src="../assets/james.jpg" alt="" class="user-img rounded-circle">
+                            <img src="assets/james.jpg" alt="" class="user-img rounded-circle">
                             <div class="small text-white mt-2">
                                 James Clerk<br>Maxwell
                             </div>
@@ -102,7 +103,7 @@
                     </div>
                     <div class="col-lg-2 p-1">
                         <div class="text-center">
-                            <img src="../assets/faraday.jpeg" alt="" class="user-img rounded-circle">
+                            <img src="assets/faraday.jpeg" alt="" class="user-img rounded-circle">
                             <div class="small text-white mt-2">
                                 Michael Faraday
                             </div>
@@ -330,7 +331,7 @@
                                             Resultan Medan Listrik Segaris
                                         </div>
                                         <div class="text-center py-4">
-                                            <img src="../assets/segaris.jpg" alt="" class="img-fluid rounded">
+                                            <img src="assets/segaris.jpg" alt="" class="img-fluid rounded">
                                         </div>
                                         <div class="text-center">
                                             Penulisan sistematisnya yaitu:
@@ -346,7 +347,7 @@
                                             Resultan Medan Listrik Tak Segaris
                                         </div>
                                         <div class="text-center py-4">
-                                            <img src="../assets/taksegaris.jpg" alt="" class="img-fluid rounded">
+                                            <img src="assets/taksegaris.jpg" alt="" class="img-fluid rounded">
                                         </div>
                                         <div class="text-center">
                                             Penulisan sistematisnya yaitu:
@@ -426,6 +427,7 @@
     <script src="boostrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         const swiper = new Swiper('.swiper1', {
             slidesPerView: 2,
@@ -455,17 +457,24 @@
         });
         AOS.init();
 
-        // Mencegah zoom saat mousewheel atau gesture zoom terjadi
         window.addEventListener('wheel', function (event) {
             if (event.ctrlKey === true) {
                 event.preventDefault();
             }
         }, { passive: false });
 
-        // Mencegah zoom saat menggunakan gesture zoom pada perangkat mobile
         window.addEventListener('gesturestart', function (event) {
             event.preventDefault();
         }, { passive: false });
+
+        var typed = new Typed('#element', {
+            strings: ['Selamat Datang di <b>Medan Listrik</b>', 'Kami Dari Kelompok 2'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 10000,
+            startDelay: 1000,
+            loop: true
+        });
 
     </script>
 </body>
