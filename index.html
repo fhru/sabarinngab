@@ -473,16 +473,16 @@
             event.preventDefault();
         }, { passive: false });
 
+        // ============================================================================
         var typed = new Typed('#element', {
             strings: ['Selamat Datang di <b>Medan Listrik</b>', 'Kami Dari Kelompok 2'],
             typeSpeed: 50,
-            backSpeed: 25,
-            backDelay: 10000,
+            backSpeed: 0,
+            backDelay: 8000,
             startDelay: 700,
             loop: true
         });
 
-        // ============================================================================
 
         // Function to start the Typed.js animation
         function startTypedAnimation(element) {

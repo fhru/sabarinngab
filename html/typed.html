@@ -1,77 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
-            padding: 20px 50px;
-            background-color: rgb(4, 174, 143);
-        }
-
-        .animation-container {
-            display: flex;
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            font-size: 42px;
-            border: 1px solid black;
-        }
-    </style>
+    <title>Routing Example</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="animation-container">
-            <span class="typed-animation" data-strings='["Hello", "World"]'></span>
-        </div>
-        <div class="animation-container">
-            <span class="typed-animation" data-strings='["OpenAI", "GPT-3.5"]'></span>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div id="content">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the home page content.</p>
     </div>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script>
-        // Function to start the Typed.js animation
-        function startTypedAnimation(element) {
-            var strings = JSON.parse(element.getAttribute('data-strings'));
+        // Function to update the content based on the current URL
+        function updateContent() {
+            var path = window.location.pathname;
 
-            var typed = new Typed(element, {
-                // Typed.js options and settings
-                strings: strings,
-                typeSpeed: 50,
-                backSpeed: 25,
-                startDelay: 700,
-                loop: false
-            });
+            var contentDiv = document.getElementById('content');
+
+            // Clear the existing content
+            contentDiv.innerHTML = '';
+
+            // Check the current path and update the content accordingly
+            if (path === '/') {
+                contentDiv.innerHTML = '<h1>Welcome to the Home Page</h1><p>This is the home page content.</p>';
+            } else if (path === '/about') {
+                contentDiv.innerHTML = '<h1>About Us</h1><p>This is the about page content.</p>';
+            } else if (path === '/contact') {
+                contentDiv.innerHTML = '<h1>Contact Us</h1><p>This is the contact page content.</p>';
+            } else {
+                contentDiv.innerHTML = '<h1>Page Not Found</h1><p>The requested page does not exist.</p>';
+            }
         }
 
-        // Intersection Observer callback function
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // If the animation container is in the viewport, start the animation
-                    var typedAnimation = entry.target.querySelector('.typed-animation');
-                    startTypedAnimation(typedAnimation);
-                    observer.unobserve(entry.target);
-                }
-            });
+        // Event listener for popstate event
+        window.addEventListener('popstate', updateContent);
+
+        // Function to handle navigation
+        function handleNavigation(event) {
+            event.preventDefault();
+            var targetPath = event.target.getAttribute('href');
+            history.pushState(null, '', targetPath);
+            updateContent();
         }
 
-        // Create an Intersection Observer instance
-        var observer = new IntersectionObserver(handleIntersection);
-
-        // Target all animation containers
-        var animationContainers = document.querySelectorAll('.animation-container');
-
-        // Start observing each animation container
-        animationContainers.forEach(container => {
-            observer.observe(container);
+        // Event listeners for navigation links
+        var navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', handleNavigation);
         });
+
+        // Initial content update
+        updateContent();
 
     </script>
 </body>
