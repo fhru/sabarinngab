@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 20px 50px;
+            background-color: rgb(4, 174, 143);
+        }
+
+        .animation-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="animation-container">
+            <span class="typed-animation" data-strings='["Hello", "World"]'></span>
+        </div>
+        <div class="animation-container">
+            <span class="typed-animation" data-strings='["OpenAI", "GPT-3.5"]'></span>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        // Function to start the Typed.js animation
+        function startTypedAnimation(element) {
+            var strings = JSON.parse(element.getAttribute('data-strings'));
+
+            var typed = new Typed(element, {
+                // Typed.js options and settings
+                strings: strings,
+                typeSpeed: 50,
+                backSpeed: 25,
+                startDelay: 700,
+                loop: false
+            });
+        }
+
+        // Intersection Observer callback function
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // If the animation container is in the viewport, start the animation
+                    var typedAnimation = entry.target.querySelector('.typed-animation');
+                    startTypedAnimation(typedAnimation);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Create an Intersection Observer instance
+        var observer = new IntersectionObserver(handleIntersection);
+
+        // Target all animation containers
+        var animationContainers = document.querySelectorAll('.animation-container');
+
+        // Start observing each animation container
+        animationContainers.forEach(container => {
+            observer.observe(container);
+        });
+
+    </script>
+</body>
+
+</html>

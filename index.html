@@ -129,8 +129,11 @@
                         <div class="pengertian-box mt-4 p-5 text-white-50" data-aos="zoom-out-up" data-aos-delay="150">
                             <div class=" row align-items-center">
                                 <div class="col-lg-8">
-                                    <div class="fs-3 text-white" id="pengertian-container">
-                                        <span id="pengertian-title"></span>
+                                    <div class="fs-3 text-white">
+                                        <div class="animation-container">
+                                            <span class="typed-animation"
+                                                data-strings='["Tahukah kalian apa itu medan listrik?"]'></span>
+                                        </div>
                                     </div>
                                     <br>
                                     Medan listrik yaitu ruang yang terletak di sekitar muatan listrik. Dimana ketika
@@ -167,7 +170,9 @@
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
                     <div class="col-lg-4 fs-1 text-white ps-5">
-                        KUAT MEDAN LISTRIK
+                        <div class="animation-container">
+                            <span class="typed-animation" data-strings='["KUAT MEDAN LISTRIK"]'></span>
+                        </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="kml-box p-5 text-white-50" data-aos="zoom-in-left" data-aos-delay="150">
@@ -311,15 +316,14 @@
             </div>
         </div>
     </div>
-    </div>
 
     <div class="fourth-body">
         <div class="container py-5">
             <div class="resultan">
                 <div class="fs-1 text-white text-center mb-5">
-                    RUMUS RESULTAN
-                    <br>
-                    MEDAN LISTRIK
+                    <div class="animation-container">
+                        <span class="typed-animation" data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
+                    </div>
                 </div>
                 <div class="row gx-5 mt-5 pt-3 justify-content-center">
                     <div class="col-8 col-lg-8" data-aos="zoom-in-left" data-aos-delay="150">
@@ -370,7 +374,9 @@
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
                     <div class="col-lg-4 fs-1 text-white ps-5">
-                        MENCARI KUAT MEDAN LISTRIK
+                        <div class="animation-container">
+                            <span class="typed-animation" data-strings='["MENCARI KUAT MEDAN LISTRIK"]'></span>
+                        </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="kml-box p-5 text-white-50">
@@ -476,17 +482,31 @@
             loop: true
         });
 
-
+        // ============================================================================
 
         // Function to start the Typed.js animation
-        function startTypedAnimation() {
-            var typed2 = new Typed('#pengertian-title', {
-                strings: ['Tahukah kalian apa itu medan listrik?'],
+        function startTypedAnimation(element) {
+            var strings = JSON.parse(element.getAttribute('data-strings'));
+
+            var typed = new Typed(element, {
+                // Typed.js options and settings
+                strings: strings,
                 typeSpeed: 50,
                 backSpeed: 25,
                 startDelay: 700,
                 loop: false
             });
+
+            // Reset the Typed.js animation when not in view
+            var observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) {
+                        typed.reset();
+                    }
+                });
+            });
+
+            observer.observe(element);
         }
 
         // Intersection Observer callback function
@@ -494,7 +514,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     // If the animation container is in the viewport, start the animation
-                    startTypedAnimation();
+                    var typedAnimation = entry.target.querySelector('.typed-animation');
+                    startTypedAnimation(typedAnimation);
                     observer.unobserve(entry.target);
                 }
             });
@@ -503,12 +524,13 @@
         // Create an Intersection Observer instance
         var observer = new IntersectionObserver(handleIntersection);
 
-        // Target the animation container
-        var animationContainer = document.getElementById('pengertian-container');
+        // Target all animation containers
+        var animationContainers = document.querySelectorAll('.animation-container');
 
-        // Start observing the animation container
-        observer.observe(animationContainer);
-
+        // Start observing each animation container
+        animationContainers.forEach(container => {
+            observer.observe(container);
+        });
 
     </script>
 </body>
