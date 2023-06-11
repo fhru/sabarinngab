@@ -6,12 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .element {
+            display: flex;
+            padding: 10px;
+            background-color: salmon;
+            margin: 10px;
+            transition: width 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .additional-content {
+            margin-left: 5px;
+            display: none;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/9ba83b78d1.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <a href="page2.html" onclick="navigateToPage(event)">Go to Page 2</a>
+    <div class="container">
+        <div class="element" onmouseover="showAdditionalContent(this)" onmouseout="hideAdditionalContent(this)">
+            <i class="fa-solid fa-square-root-variable"></i>
+            <div class="additional-content">Konten Tambahan</div>
+        </div>
+        <div class="element" onmouseover="showAdditionalContent(this)" onmouseout="hideAdditionalContent(this)">
+            <i class="fa-solid fa-square-root-variable"></i>
+            <div class="additional-content">Konten Tambahan</div>
+        </div>
+    </div>
+
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script>
+    function showAdditionalContent(element) {
+        var additionalContent = element.querySelector('.additional-content');
+        additionalContent.style.display = 'block';
+    }
+
+    function hideAdditionalContent(element) {
+        var additionalContent = element.querySelector('.additional-content');
+        additionalContent.style.display = 'none';
+    }
+
+</script>
 
 
 </html>
