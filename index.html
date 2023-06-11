@@ -385,7 +385,7 @@
                     <!-- Mencari kuat medan listrik -->
                     <div id="ubah1" class="col-lg-8" style="display: block;">
                         <div class="kml-box p-5 text-white-50">
-                            rumus <span class="text-white">mencari kuat medan listrik</span>  yaitu :
+                            rumus <span class="text-white">mencari kuat medan listrik</span> yaitu :
                             <div class="text-center text-white fs-2 my-3">
                                 <em>E = f/q atau E = k . q/r<sup>2</sup></em>
                             </div>
@@ -437,7 +437,8 @@
                                 <form id="form" onsubmit="return false;">
                                     Masukkan kuat medan listrik :
                                     <br>
-                                    <input class="input" type="text" id="input_kuat_listrik" placeholder="kuat listrik" />
+                                    <input class="input" type="text" id="input_kuat_listrik"
+                                        placeholder="kuat listrik" />
                                     <br>
                                     <br>
                                     Masukkan jarak :
@@ -486,7 +487,8 @@
                                     <br>
                                     Masukkan kuat medan listrik :
                                     <br>
-                                    <input class="input" type="text" id="kuat_medan_listrik" placeholder="kuat listrik" />
+                                    <input class="input" type="text" id="kuat_medan_listrik"
+                                        placeholder="kuat listrik" />
                                     <br>
                                     <br>
                                     <div class="mt-4 d-flex justify-content-center">
@@ -520,7 +522,7 @@
                             <div id="container-stars">
                                 <div id="stars"></div>
                             </div>
-                            
+
                             <div id="glow">
                                 <div class="circle"></div>
                                 <div class="circle"></div>
@@ -539,7 +541,7 @@
                                 <div class="circle"></div>
                             </div>
                         </button>
-                      
+
                         <!-- button 3 -->
                         <button type="submit" onclick="lahiya()" class="btn mx-3 mt-5" type="button">
                             <strong>JARAK</strong>
@@ -693,17 +695,17 @@
         });
 
 
-        function coba(){
+        function coba() {
             document.getElementById('ubah1').style = 'display:block';
             document.getElementById('ubah2').style = 'display:none';
             document.getElementById('ubah3').style = 'display:none';
         }
-        function gass(){
+        function gass() {
             document.getElementById('ubah1').style = 'display:none';
             document.getElementById('ubah2').style = 'display:block';
             document.getElementById('ubah3').style = 'display:none';
         }
-        function lahiya(){
+        function lahiya() {
             document.getElementById('ubah1').style = 'display:none';
             document.getElementById('ubah2').style = 'display:none';
             document.getElementById('ubah3').style = 'display:block';
@@ -711,7 +713,7 @@
 
 
 
-         // ==================================================
+        // ==================================================
         function showAdditionalContent(element) {
             var additionalContent = element.querySelector('.additional-content');
             additionalContent.style.display = 'block';
@@ -720,6 +722,7 @@
         function hideAdditionalContent(element) {
             var additionalContent = element.querySelector('.additional-content');
             additionalContent.style.display = 'none';
+        }
 
     </script>
 </body>
