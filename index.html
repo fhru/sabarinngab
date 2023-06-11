@@ -13,7 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-    <script src="../js/jquery.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/9ba83b78d1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -167,6 +168,9 @@
 
     <div class="third-body">
         <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="fs-1 text-white">Materi</div>
+            </div>
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
                     <div class="col-lg-4 fs-1 text-white ps-5">
@@ -425,6 +429,32 @@
         </div>
     </div>
 
+    <div class="sixth-body">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="menus">
+                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
+                            onmouseout="hideAdditionalContent(this)">
+                            <i class="fa-solid fa-square-root-variable"></i>
+                            <div class="additional-content">Rumus</div>
+                        </div>
+                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
+                            onmouseout="hideAdditionalContent(this)">
+                            <i class="fa-solid fa-list-check"></i>
+                            <div class="additional-content">Soal</div>
+                        </div>
+                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
+                            onmouseout="hideAdditionalContent(this)">
+                            <i class="fa-solid fa-list-check"></i>
+                            <div class="additional-content">Aplikasi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- scripts -->
     <script src="js/particles.js"></script>
@@ -434,6 +464,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script>
         const swiper = new Swiper('.swiper1', {
             slidesPerView: 2,
@@ -531,6 +562,17 @@
         animationContainers.forEach(container => {
             observer.observe(container);
         });
+
+        // ==================================================
+        function showAdditionalContent(element) {
+            var additionalContent = element.querySelector('.additional-content');
+            additionalContent.style.display = 'block';
+        }
+
+        function hideAdditionalContent(element) {
+            var additionalContent = element.querySelector('.additional-content');
+            additionalContent.style.display = 'none';
+        }
 
     </script>
 </body>
