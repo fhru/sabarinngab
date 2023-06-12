@@ -82,7 +82,7 @@
     </div>
     <div class="second-body">
         <div class="container py-5">
-            <div class="ingfo p-5 text-white" data-aos="zoom-out-up" data-aos-delay="150">
+            <div class="ingfo p-5 text-white" data-aos="fade-up" data-aos-duration="500">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-2 p-1">
                         <div class="text-center">
@@ -127,7 +127,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="pengertian-box mt-4 p-5 text-white-50" data-aos="zoom-out-up" data-aos-delay="150">
+                        <div class="pengertian-box mt-4 p-5 text-white-50" data-aos="fade-up" data-aos-duration="500">
                             <div class=" row align-items-center">
                                 <div class="col-lg-8">
                                     <div class="fs-3 text-white">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="kml-box p-5 text-white-50" data-aos="zoom-in-left" data-aos-delay="150">
+                        <div class="kml-box p-5 text-white-50" data-aos="fade-up" data-aos-duration="500">
                             Oke, temen-temen kuat medan listrik dapat diketahui dengan penulisan sistematis berikut :
                             <div class="text-center text-white fs-2 my-3">
                                 <em>E = f/q</em>
@@ -283,7 +283,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="kml-box p-5 mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <div class="kml-box p-5 mt-5" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="text-white-50">
@@ -323,268 +323,263 @@
 
     <div class="fourth-body">
         <div class="container py-5">
-            <div class="resultan">
-                <div class="fs-1 text-white text-center mb-5">
-                    <div class="animation-container">
-                        <span class="typed-animation" data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
+            <div class="menus2 mb-2">
+                <div class="row">
+                    <div class="col menu-box p-2 text-white">
+                        <!-- ubah jadi collllllllllllllllllll nanti -->
+                        <div class="fs-4 px-4 py-2 m-2 menu-box-inside active" onclick="toggleButton(this); rumus()">
+                            Rumus
+                        </div>
+                        <div class="fs-4 fs-lg-3 px-4 py-2 m-2 menu-box-inside" onclick="toggleButton(this)">
+                            Contoh Soal
+                        </div>
+                        <div class="fs-4 fs-lg-3 px-4 py-2 m-2 menu-box-inside"
+                            onclick="toggleButton(this); aplikasi()">
+                            Aplikasi
+                        </div>
                     </div>
                 </div>
-                <div class="row gx-5 mt-5 pt-3 justify-content-center">
-                    <div class="col-8 col-lg-8" data-aos="zoom-in-left" data-aos-delay="150">
-                        <div class="swiper swiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="resultan-box p-5 text-white-50">
-                                        <div class="text-white text-center fs-5">
-                                            Resultan Medan Listrik Segaris
+
+            </div>
+
+            <div class="row mt-5">
+                <div class="col">
+                    <div id="resultan">
+                        <div class="fs-1 text-white text-center mb-5">
+                            <div class="animation-container">
+                                <span class="typed-animation"
+                                    data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
+                            </div>
+                        </div>
+                        <div class="row gx-5 mt-5 pt-3 justify-content-center">
+                            <div class="col-8 col-lg-8" data-aos="fade-up" data-aos-duration="500">
+                                <div class="swiper swiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="resultan-box p-5 text-white-50">
+                                                <div class="text-white text-center fs-5">
+                                                    Resultan Medan Listrik Segaris
+                                                </div>
+                                                <div class="text-center py-4">
+                                                    <img src="assets/segaris.jpg" alt="" class="img-fluid rounded">
+                                                </div>
+                                                <div class="text-center">
+                                                    Penulisan sistematisnya yaitu:
+                                                    <em class="fs-3 text-white">
+                                                        $${ E = k(\frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2})}$$
+                                                    </em>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="text-center py-4">
-                                            <img src="assets/segaris.jpg" alt="" class="img-fluid rounded">
-                                        </div>
-                                        <div class="text-center">
-                                            Penulisan sistematisnya yaitu:
-                                            <em class="fs-3 text-white">
-                                                $${ E = k(\frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2})}$$
-                                            </em>
+                                        <div class="swiper-slide">
+                                            <div class="resultan-box p-5 text-white-50">
+                                                <div class="text-white text-center fs-5">
+                                                    Resultan Medan Listrik Tak Segaris
+                                                </div>
+                                                <div class="text-center py-4">
+                                                    <img src="assets/taksegaris.jpg" alt="" class="img-fluid rounded">
+                                                </div>
+                                                <div class="text-center">
+                                                    Penulisan sistematisnya yaitu:
+                                                    <em class="fs-4 text-white">
+                                                        $${ E_A = \sqrt{E_1^2 + E_2^2 + 2\times E_1 E_2 \cos\theta}
+                                                        }$$
+                                                    </em>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="resultan-box p-5 text-white-50">
-                                        <div class="text-white text-center fs-5">
-                                            Resultan Medan Listrik Tak Segaris
-                                        </div>
-                                        <div class="text-center py-4">
-                                            <img src="assets/taksegaris.jpg" alt="" class="img-fluid rounded">
-                                        </div>
-                                        <div class="text-center">
-                                            Penulisan sistematisnya yaitu:
-                                            <em class="fs-4 text-white">
-                                                $${ E_A = \sqrt{E_1^2 + E_2^2 + 2\times E_1 E_2 \cos\theta} }$$
-                                            </em>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="kml" class="kuat-medan-listrik mb-3">
+                        <div class="animation-container text-center text-white fs-1 py-4">
+                            <span class="typed-animation" data-strings='["CONVERT RUMUS"]'></span>
+                        </div>
+                        <div class="row py-3 d-flex justify-content-center align-items-center">
+                            <!-- Mencari kuat medan listrik -->
+                            <div id="ubah1" class="col-lg-7" style="display: block;">
+                                <div class="kml-box p-5 text-white-50">
+                                    rumus <span class="text-white">mencari kuat medan listrik</span> yaitu :
+                                    <div class="text-center text-white fs-2 my-3">
+                                        <em>E = f/q atau E = k . q/r<sup>2</sup></em>
                                     </div>
+                                    <div class="text-center">
+                                        <form id="form" onsubmit="return false;">
+                                            Masukkan muatan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="input_muatan" placeholder="muatan" />
+                                            <br>
+                                            <br>
+                                            Masukkan jarak :
+                                            <br>
+                                            <input class="input" type="text" id="input_jarak1" placeholder="jarak" />
+                                            <br>
+                                            <br>
+                                            <div class="mt-4 d-flex justify-content-center">
+                                                <button type="submit" onclick="convert1()" class="btn" type="button">
+                                                    <strong>SUBMIT</strong>
+                                                    <div id="container-stars">
+                                                        <div id="stars"></div>
+                                                    </div>
+
+                                                    <div id="glow">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <br>
+                                    <br>
+                                    Kuat medan listrik : <span id="hasil-convert1" class="text-white"></span>
+                                    <br>
+                                    <br>
+                                    Arah medan listrik : <span id="arah-arus" class="text-white"></span>
                                 </div>
                             </div>
+
+                            <!-- Mencari muatan -->
+                            <div id="ubah2" class="col-lg-7" style="display: none;">
+                                <div class="kml-box p-5 text-white-50">
+                                    rumus <span class="text-white">mencari muatan listrik</span> yaitu :
+                                    <div class="text-center text-white fs-2 my-3">
+                                        <em>q = E . r<sup>2</sup>/k</em>
+                                    </div>
+                                    <div class="text-center">
+                                        <form id="form" onsubmit="return false;">
+                                            Masukkan kuat medan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="input_kuat_listrik"
+                                                placeholder="kuat listrik" />
+                                            <br>
+                                            <br>
+                                            Masukkan jarak :
+                                            <br>
+                                            <input class="input" type="text" id="input_jarak2" placeholder="jarak" />
+                                            <br>
+                                            <br>
+                                            <div class="mt-4 d-flex justify-content-center">
+                                                <button type="submit" onclick="convert2()" class="btn" type="button">
+                                                    <strong>SUBMIT</strong>
+                                                    <div id="container-stars">
+                                                        <div id="stars"></div>
+                                                    </div>
+
+                                                    <div id="glow">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Muatan Listrik : <span id="hasil-convert2" class="text-white"></span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <!-- Mencari jarak -->
+                            <div id="ubah3" class="col-lg-7" style="display: none;">
+                                <div class="kml-box p-5 text-white-50">
+                                    rumus <span class="text-white">mencari jarak</span> yaitu :
+                                    <div class="text-center text-white fs-2 my-3">
+                                        <em>r = &#8730; k . q / E </em>
+                                    </div>
+                                    <div class="text-center">
+                                        <form id="form" onsubmit="return false;">
+                                            Masukkan muatan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="ingfo_muatan" placeholder="muatan" />
+                                            <br>
+                                            <br>
+                                            Masukkan kuat medan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="kuat_medan_listrik"
+                                                placeholder="kuat listrik" />
+                                            <br>
+                                            <br>
+                                            <div class="mt-4 d-flex justify-content-center">
+                                                <button type="submit" onclick="convert3()" class="btn" type="button">
+                                                    <strong>SUBMIT</strong>
+                                                    <div id="container-stars">
+                                                        <div id="stars"></div>
+                                                    </div>
+
+                                                    <div id="glow">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Jarak : <span id="hasil-convert3" class="text-white"></span>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row  justify-content-center">
+                                <!-- button 1 -->
+                                <button type="submit" onclick="coba()" class="btn mx-3 mt-5" type="button">
+                                    <strong>KUAT LISTRIK</strong>
+                                    <div id="container-stars">
+                                        <div id="stars"></div>
+                                    </div>
+
+                                    <div id="glow">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </button>
+
+                                <!-- button 2 -->
+                                <button type="submit" onclick="gass()" class="btn mx-3 mt-5" type="button">
+                                    <strong>MUATAN</strong>
+                                    <div id="container-stars">
+                                        <div id="stars"></div>
+                                    </div>
+
+                                    <div id="glow">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </button>
+
+                                <!-- button 3 -->
+                                <button type="submit" onclick="lahiya()" class="btn mx-3 mt-5" type="button">
+                                    <strong>JARAK</strong>
+                                    <div id="container-stars">
+                                        <div id="stars"></div>
+                                    </div>
+
+                                    <div id="glow">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
-    <div class="fifth-body">
-        <div class="container py-5">
-            <div class="kuat-medan-listrik py-3">
-                <div class="row pb-5">
-                    <div class="col-lg-4 fs-1 text-white ps-5">
-                        <div class="animation-container">
-                            <span class="typed-animation" data-strings='["CONVERT YOUR TASK HERE"]'></span>
-                        </div>
-                    </div>
-                    <!-- Mencari kuat medan listrik -->
-                    <div id="ubah1" class="col-lg-8" style="display: block;">
-                        <div class="kml-box p-5 text-white-50">
-                            rumus <span class="text-white">mencari kuat medan listrik</span> yaitu :
-                            <div class="text-center text-white fs-2 my-3">
-                                <em>E = f/q atau E = k . q/r<sup>2</sup></em>
-                            </div>
-                            <div class="text-center">
-                                <form id="form" onsubmit="return false;">
-                                    Masukkan muatan listrik :
-                                    <br>
-                                    <input class="input" type="text" id="input_muatan" placeholder="muatan" />
-                                    <br>
-                                    <br>
-                                    Masukkan jarak :
-                                    <br>
-                                    <input class="input" type="text" id="input_jarak1" placeholder="jarak" />
-                                    <br>
-                                    <br>
-                                    <div class="mt-4 d-flex justify-content-center">
-                                        <button type="submit" onclick="convert1()" class="btn" type="button">
-                                            <strong>SUBMIT</strong>
-                                            <div id="container-stars">
-                                                <div id="stars"></div>
-                                            </div>
-
-                                            <div id="glow">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </form>
-
-                            </div>
-                            <br>
-                            <br>
-                            Kuat medan listrik : <span id="hasil-convert1" class="text-white"></span>
-                            <br>
-                            <br>
-                            Arah medan listrik : <span id="arah-arus" class="text-white"></span>
-                        </div>
-                    </div>
-
-                    <!-- Mencari muatan -->
-                    <div id="ubah2" class="col-lg-8" style="display: none;">
-                        <div class="kml-box p-5 text-white-50">
-                            rumus <span class="text-white">mencari muatan listrik</span> yaitu :
-                            <div class="text-center text-white fs-2 my-3">
-                                <em>q = E . r<sup>2</sup>/k</em>
-                            </div>
-                            <div class="text-center">
-                                <form id="form" onsubmit="return false;">
-                                    Masukkan kuat medan listrik :
-                                    <br>
-                                    <input class="input" type="text" id="input_kuat_listrik"
-                                        placeholder="kuat listrik" />
-                                    <br>
-                                    <br>
-                                    Masukkan jarak :
-                                    <br>
-                                    <input class="input" type="text" id="input_jarak2" placeholder="jarak" />
-                                    <br>
-                                    <br>
-                                    <div class="mt-4 d-flex justify-content-center">
-                                        <button type="submit" onclick="convert2()" class="btn" type="button">
-                                            <strong>SUBMIT</strong>
-                                            <div id="container-stars">
-                                                <div id="stars"></div>
-                                            </div>
-
-                                            <div id="glow">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </form>
-
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            Muatan Listrik : <span id="hasil-convert2" class="text-white"></span>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-
-                    <!-- Mencari jarak -->
-                    <div id="ubah3" class="col-lg-8" style="display: none;">
-                        <div class="kml-box p-5 text-white-50">
-                            rumus <span class="text-white">mencari jarak</span> yaitu :
-                            <div class="text-center text-white fs-2 my-3">
-                                <em>r = &#8730; k . q / E </em>
-                            </div>
-                            <div class="text-center">
-                                <form id="form" onsubmit="return false;">
-                                    Masukkan muatan listrik :
-                                    <br>
-                                    <input class="input" type="text" id="ingfo_muatan" placeholder="muatan" />
-                                    <br>
-                                    <br>
-                                    Masukkan kuat medan listrik :
-                                    <br>
-                                    <input class="input" type="text" id="kuat_medan_listrik"
-                                        placeholder="kuat listrik" />
-                                    <br>
-                                    <br>
-                                    <div class="mt-4 d-flex justify-content-center">
-                                        <button type="submit" onclick="convert3()" class="btn" type="button">
-                                            <strong>SUBMIT</strong>
-                                            <div id="container-stars">
-                                                <div id="stars"></div>
-                                            </div>
-
-                                            <div id="glow">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </form>
-
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                            Jarak : <span id="hasil-convert3" class="text-white"></span>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row  justify-content-center">
-                        <!-- button 1 -->
-                        <button type="submit" onclick="coba()" class="btn mx-3 mt-5" type="button">
-                            <strong>KUAT LISTRIK</strong>
-                            <div id="container-stars">
-                                <div id="stars"></div>
-                            </div>
-
-                            <div id="glow">
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </button>
-
-                        <!-- button 2 -->
-                        <button type="submit" onclick="gass()" class="btn mx-3 mt-5" type="button">
-                            <strong>MUATAN</strong>
-                            <div id="container-stars">
-                                <div id="stars"></div>
-                            </div>
-
-                            <div id="glow">
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </button>
-
-                        <!-- button 3 -->
-                        <button type="submit" onclick="lahiya()" class="btn mx-3 mt-5" type="button">
-                            <strong>JARAK</strong>
-                            <div id="container-stars">
-                                <div id="stars"></div>
-                            </div>
-
-                            <div id="glow">
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="sixth-body">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="menus">
-                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
-                            onmouseout="hideAdditionalContent(this)">
-                            <i class="fa-solid fa-square-root-variable"></i>
-                            <div class="additional-content">Rumus</div>
-                        </div>
-                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
-                            onmouseout="hideAdditionalContent(this)">
-                            <i class="fa-solid fa-list-check"></i>
-                            <div class="additional-content">Soal</div>
-                        </div>
-                        <div class="menu-btn p-4 my-3" onmouseover="showAdditionalContent(this)"
-                            onmouseout="hideAdditionalContent(this)">
-                            <i class="fa-solid fa-list-check"></i>
-                            <div class="additional-content">Aplikasi</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- scripts -->
@@ -597,6 +592,48 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
+        function toggleButton(button) {
+            const menuButtons = document.querySelectorAll('.menu-box-inside');
+            menuButtons.forEach((btn) => {
+                if (btn !== button) {
+                    btn.classList.remove('active');
+                }
+            });
+
+            button.classList.toggle('active');
+        }
+
+        function toggleAccordion(button) {
+            const accordionContent = button.nextElementSibling;
+            accordionContent.classList.toggle('active');
+        }
+
+        function coba() {
+            document.getElementById('ubah1').style = 'display:block';
+            document.getElementById('ubah2').style = 'display:none';
+            document.getElementById('ubah3').style = 'display:none';
+        }
+        function gass() {
+            document.getElementById('ubah1').style = 'display:none';
+            document.getElementById('ubah2').style = 'display:block';
+            document.getElementById('ubah3').style = 'display:none';
+        }
+        function lahiya() {
+            document.getElementById('ubah1').style = 'display:none';
+            document.getElementById('ubah2').style = 'display:none';
+            document.getElementById('ubah3').style = 'display:block';
+        }
+
+        function rumus() {
+            document.getElementById('resultan').style = 'display:block';
+            document.getElementById('kml').style = 'display:none';
+        }
+
+        function aplikasi() {
+            document.getElementById('resultan').style = 'display:none';
+            document.getElementById('kml').style = 'display:block';
+        }
+
         const swiper = new Swiper('.swiper1', {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -693,36 +730,6 @@
         animationContainers.forEach(container => {
             observer.observe(container);
         });
-
-
-        function coba() {
-            document.getElementById('ubah1').style = 'display:block';
-            document.getElementById('ubah2').style = 'display:none';
-            document.getElementById('ubah3').style = 'display:none';
-        }
-        function gass() {
-            document.getElementById('ubah1').style = 'display:none';
-            document.getElementById('ubah2').style = 'display:block';
-            document.getElementById('ubah3').style = 'display:none';
-        }
-        function lahiya() {
-            document.getElementById('ubah1').style = 'display:none';
-            document.getElementById('ubah2').style = 'display:none';
-            document.getElementById('ubah3').style = 'display:block';
-        }
-
-
-
-        // ==================================================
-        function showAdditionalContent(element) {
-            var additionalContent = element.querySelector('.additional-content');
-            additionalContent.style.display = 'block';
-        }
-
-        function hideAdditionalContent(element) {
-            var additionalContent = element.querySelector('.additional-content');
-            additionalContent.style.display = 'none';
-        }
 
     </script>
 </body>
