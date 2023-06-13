@@ -324,18 +324,27 @@
     <div class="fourth-body">
         <div class="container py-5">
             <div class="menus2 mb-2">
-                <div class="row">
-                    <div class="col menu-box p-2 text-white">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8 p-2 text-white">
                         <!-- ubah jadi collllllllllllllllllll nanti -->
-                        <div class="fs-4 px-4 py-2 m-2 menu-box-inside active" onclick="toggleButton(this); rumus()">
-                            Rumus
-                        </div>
-                        <div class="fs-4 fs-lg-3 px-4 py-2 m-2 menu-box-inside" onclick="toggleButton(this)">
-                            Contoh Soal
-                        </div>
-                        <div class="fs-4 fs-lg-3 px-4 py-2 m-2 menu-box-inside"
-                            onclick="toggleButton(this); aplikasi()">
-                            Aplikasi
+                        <div class="row py-2 px-1 menu-box">
+                            <div class="col">
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside active"
+                                    onclick="toggleButton(this); rumus()">
+                                    Rumus
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside" onclick="toggleButton(this)">
+                                    Contoh Soal
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside"
+                                    onclick="toggleButton(this); aplikasi()">
+                                    Aplikasi
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -678,7 +687,7 @@
             typeSpeed: 50,
             backSpeed: 0,
             backDelay: 8000,
-            startDelay: 700,
+            startDelay: 500,
             loop: true
         });
 
@@ -690,8 +699,8 @@
             var typed = new Typed(element, {
                 // Typed.js options and settings
                 strings: strings,
-                typeSpeed: 50,
-                backSpeed: 25,
+                typeSpeed: 30,
+                backSpeed: 15,
                 startDelay: 700,
                 loop: false
             });
