@@ -334,7 +334,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside" onclick="toggleButton(this)">
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside"
+                                    onclick="toggleButton(this); contohSoal()">
                                     Contoh Soal
                                 </div>
                             </div>
@@ -582,6 +583,13 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="contoh-soal">
+                        <div class="animation-container text-center text-white fs-1 py-4">
+                            <span class="typed-animation" data-strings='["Contoh Soal"]'></span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -635,11 +643,21 @@
         function rumus() {
             document.getElementById('resultan').style = 'display:block';
             document.getElementById('kml').style = 'display:none';
+            document.getElementById('contoh-soal').style = 'display:none';
+
         }
 
         function aplikasi() {
             document.getElementById('resultan').style = 'display:none';
             document.getElementById('kml').style = 'display:block';
+            document.getElementById('contoh-soal').style = 'display:none';
+
+        }
+
+        function contohSoal() {
+            document.getElementById('resultan').style = 'display:none';
+            document.getElementById('kml').style = 'display:none';
+            document.getElementById('contoh-soal').style = 'display:block';
         }
 
         const swiper = new Swiper('.swiper1', {
