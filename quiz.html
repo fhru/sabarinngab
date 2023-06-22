@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="header py-3">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">FisDas</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-lg-start text-center" aria-current="page"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-lg-start text-center" href="#">Quiz</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="text-center text-white fs-1 pb-5">
+                Quiz Time
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class=" p-5 text-white d-flex flex-column justify-content-center">
+                            <div class="quiz-container">
+                                <div class="fs-1 question">
+                                    Apa ibukota Indonesia?
+                                </div>
+                                <div class="options">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="a" id="q1-a">
+                                        <label class="form-check-label" for="q1-a">
+                                            a) Jakarta
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="b" id="q1-b">
+                                        <label class="form-check-label" for="q1-b">
+                                            b) Surabaya
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="c" id="q1-c">
+                                        <label class="form-check-label" for="q1-c">
+                                            c) Bandung
+                                        </label>
+                                    </div>
+                                    <div class="error-message alert-danger mt-3" role="alert" id="error-message-q1">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" p-5 text-white d-flex flex-column justify-content-center">
+                            <div class="quiz-container">
+                                <div class="fs-1 question">
+                                    Apa bahasa pemrograman web yang dibahas dalam contoh ini?
+                                </div>
+                                <div class="options">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="a" id="q2-a">
+                                        <label class="form-check-label" for="q2-a">
+                                            a) HTML
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="b" id="q2-b">
+                                        <label class="form-check-label" for="q2-b">
+                                            b) CSS
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="c" id="q2-c">
+                                        <label class="form-check-label" for="q2-c">
+                                            c) JavaScript
+                                        </label>
+                                    </div>
+                                    <div class="error-message alert-danger mt-3" role="alert" id="error-message-q2">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" p-5 text-white d-flex flex-column justify-content-center">
+                            <button class="btn btn-primary submit-btn" onclick="checkAnswers()">Submit</button>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        window.addEventListener('wheel', function (event) {
+            if (event.ctrlKey === true) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        window.addEventListener('gesturestart', function (event) {
+            event.preventDefault();
+        }, { passive: false });
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: 'progressbar',
+            },
+            mousewheel: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        // =================================================================
+        function checkAnswers() {
+            var selectedOptions = document.querySelectorAll('input[type="radio"]:checked');
+            var correctAnswers = ['a', 'c'];
+            var score = 0;
+
+            var errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(function (message) {
+                message.innerHTML = "";
+                message.classList.remove('alert'); // Menghapus kelas "alert" jika sudah ada sebelumnya
+            });
+
+            // Validasi apakah semua pilihan telah diisi
+            var allOptionsFilled = true;
+            var radioGroups = document.querySelectorAll('.options');
+            radioGroups.forEach(function (group) {
+                var selectedOption = group.querySelector('input[type="radio"]:checked');
+                if (!selectedOption) {
+                    allOptionsFilled = false;
+                    var errorMessage = group.querySelector('.error-message');
+                    errorMessage.innerHTML = "Pilih salah satu jawaban.";
+                    errorMessage.classList.add('alert'); // Menambahkan kelas "alert"
+                }
+            });
+
+            if (!allOptionsFilled) {
+                return; // Jika ada pilihan yang belum diisi, hentikan proses pengecekan jawaban
+            }
+
+            // Pengecekan jawaban
+            for (var i = 0; i < selectedOptions.length; i++) {
+                if (selectedOptions[i].value === correctAnswers[i]) {
+                    score++;
+                } else {
+                    var questionNumber = i + 1;
+                    var errorMessage = document.getElementById('error-message-q' + questionNumber);
+                    errorMessage.innerHTML = "Jawaban salah. Silakan coba lagi.";
+                    errorMessage.classList.add('alert'); // Menambahkan kelas "alert"
+                }
+            }
+
+            var result = document.getElementById('result');
+            result.innerHTML = "Skor Anda: " + score + " dari " + correctAnswers.length;
+
+            // Menonaktifkan input radio setelah tombol "Submit" ditekan
+            var radioInputs = document.querySelectorAll('input[type="radio"]');
+            radioInputs.forEach(function (input) {
+                input.disabled = true;
+            });
+
+            // Menonaktifkan tombol "Submit" setelah tombol ditekan
+            var submitButton = document.querySelector('.submit-btn');
+            submitButton.disabled = true;
+        }
+
+    </script>
+</body>
+
+</html>

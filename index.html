@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Fisika Dasar</title>
+    <title>Medan Listrik</title>
     <link rel="stylesheet" href="css/style.css?v=3">
     <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/button.css">
@@ -25,7 +25,7 @@
             <div class="header py-3">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">FisDas</a>
+                        <a class="navbar-brand fw-bold" href="#">FisDas</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -34,13 +34,11 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link text-lg-start text-center" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link text-lg-start text-center active" aria-current="page"
+                                        href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-lg-start text-center" href="#">Features</a>
-                                </li>
-                                <li class="nav-item text-lg-start text-center">
-                                    <a class="nav-link" href="#">Pricing</a>
+                                    <a class="nav-link text-lg-start text-center" href="quiz.html">Quiz</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,14 +50,14 @@
                     <div class="col-lg-6">
                         <div class="d-flex h-100 flex-column justify-content-center">
                             <div class="fontsize-1 mb-4 fw-semibold conthrax">
-                                <span id="element"></span>
+                                Halo,<br><span id="element" class="conthrax"></span>
                             </div>
                             <div class="fontsize-2 mb-4 text-white-50 poppins">Kami akan membahas konsep-konsep dasar,
                                 fenomena
                                 menarik, dan aplikasi praktis dari medan listrik. Dari penjelasan
                                 sederhana hingga topik yang lebih mendalam.</div>
                             <div class="mt-4">
-                                <a href="#" class="btn" type="button">
+                                <a href="#pengertian" class="btn" type="button">
                                     <strong>MULAI</strong>
                                     <div id="container-stars">
                                         <div id="stars"></div>
@@ -80,14 +78,14 @@
             </div>
         </div>
     </div>
-    <div class="second-body">
+    <div class="second-body" id="pengertian">
         <div class="container py-5">
             <div class="ingfo p-5 text-white" data-aos="fade-up" data-aos-duration="500">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-2 p-1">
                         <div class="text-center">
                             <img src="assets/james.jpg" alt="" class="user-img rounded-circle">
-                            <div class="small text-white mt-2">
+                            <div class="small text-white mt-2 conthrax">
                                 James Clerk<br>Maxwell
                             </div>
                         </div>
@@ -105,7 +103,7 @@
                     <div class="col-lg-2 p-1">
                         <div class="text-center">
                             <img src="assets/faraday.jpeg" alt="" class="user-img rounded-circle">
-                            <div class="small text-white mt-2">
+                            <div class="small text-white mt-2 conthrax">
                                 Michael Faraday
                             </div>
                         </div>
@@ -122,7 +120,7 @@
             <div class="pengertian pt-5">
                 <div class="row">
                     <div class="text-center mb-4">
-                        <div class="fs-1 text-white">Pengertian</div>
+                        <div class="fs-1 text-white conthrax">Pengertian</div>
                     </div>
                 </div>
                 <div class="row">
@@ -132,7 +130,7 @@
                                 <div class="col-lg-8">
                                     <div class="fs-3 text-white">
                                         <div class="animation-container">
-                                            <span class="typed-animation"
+                                            <span class="typed-animation conthrax"
                                                 data-strings='["Tahukah kalian apa itu medan listrik?"]'></span>
                                         </div>
                                     </div>
@@ -169,19 +167,19 @@
     <div class="third-body">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <div class="fs-1 text-white">Materi</div>
+                <div class="fs-1 text-white conthrax">Materi</div>
             </div>
             <div class="kuat-medan-listrik py-3">
                 <div class="row pb-5">
                     <div class="col-lg-4 fs-1 text-white ps-5">
                         <div class="animation-container">
-                            <span class="typed-animation" data-strings='["KUAT MEDAN LISTRIK"]'></span>
+                            <span class="typed-animation conthrax" data-strings='["KUAT MEDAN LISTRIK"]'></span>
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="kml-box p-5 text-white-50" data-aos="fade-up" data-aos-duration="500">
                             Oke, temen-temen kuat medan listrik dapat diketahui dengan penulisan sistematis berikut :
-                            <div class="text-center text-white fs-2 my-3">
+                            <div class="text-center text-white fs-2 my-3 fw-bold">
                                 <em>E = f/q</em>
                             </div>
                             Dimana
@@ -288,7 +286,7 @@
                         <div class="col-lg-6">
                             <div class="text-white-50">
                                 Penulisan sistematis untuk gaya coloumb, yaitu :
-                                <div class="text-center text-white fs-2 my-3">
+                                <div class="text-center text-white fs-2 my-3 fw-bold">
                                     <em>F = k ((Q.q)/r <sup>2</sup>)</em>
                                 </div>
                                 Dimana
@@ -303,7 +301,7 @@
                         <div class="col-lg-6">
                             <div class="text-white-50">
                                 maka, penulisan sistematis kuat medan listrik yaitu :
-                                <div class="text-center text-white fs-2 my-3">
+                                <div class="text-center text-white fs-2 my-3 fw-bold">
                                     <em>E = k (Q/r <sup>2</sup>)</em>
                                 </div>
                                 Dimana
@@ -328,19 +326,19 @@
                     <div class="col-8 p-2 text-white">
                         <div class="row py-2 px-1 menu-box">
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside active"
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside active conthrax"
                                     onclick="toggleButton(this); rumus()">
                                     Rumus
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside"
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside conthrax"
                                     onclick="toggleButton(this); contohSoal()">
                                     Contoh Soal
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside"
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside conthrax"
                                     onclick="toggleButton(this); aplikasi()">
                                     Aplikasi
                                 </div>
@@ -356,7 +354,7 @@
                     <div id="resultan">
                         <div class="fs-1 text-white text-center mb-5">
                             <div class="animation-container">
-                                <span class="typed-animation"
+                                <span class="typed-animation conthrax"
                                     data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
                             </div>
                         </div>
@@ -405,7 +403,7 @@
 
                     <div id="kml" class="kuat-medan-listrik mb-3">
                         <div class="animation-container text-center text-white fs-1 py-4">
-                            <span class="typed-animation" data-strings='["CONVERT RUMUS"]'></span>
+                            <span class="typed-animation conthrax" data-strings='["CONVERT RUMUS"]'></span>
                         </div>
                         <div class="row py-3 d-flex justify-content-center align-items-center">
                             <!-- Mencari kuat medan listrik -->
@@ -586,7 +584,7 @@
 
                     <div id="contoh-soal">
                         <div class="animation-container text-center text-white fs-1 py-2">
-                            <span class="typed-animation" data-strings='["Contoh Soal"]'></span>
+                            <span class="typed-animation conthrax" data-strings='["Contoh Soal"]'></span>
                         </div>
                         <div class="row justify-content-center align-items-center">
                             <div class="col-lg-6">
@@ -688,7 +686,7 @@
         <div class="footer py-3">
             <div class="text-center small text-white-50 poppins">
                 Made With 💗 by <a href="https://instagram.com/fa.hru" target="_blank"
-                    class="poppins text-decoration-none">Me</a>
+                    class="poppins text-decoration-none">You</a>
             </div>
         </div>
     </div>
@@ -713,11 +711,6 @@
             });
 
             button.classList.toggle('active');
-        }
-
-        function toggleAccordion(button) {
-            const accordionContent = button.nextElementSibling;
-            accordionContent.classList.toggle('active');
         }
 
         function coba() {
@@ -796,7 +789,7 @@
 
         // ============================================================================
         var typed = new Typed('#element', {
-            strings: ['Selamat Datang di <b>Medan Listrik</b>', 'Kami Dari Kelompok 2'],
+            strings: ['Selamat Datang di Medan Listrik', 'Kami Dari Kelompok 2'],
             typeSpeed: 50,
             backSpeed: 0,
             backDelay: 8000,
