@@ -126,7 +126,7 @@ body {
 
 .kml-box-2 {
     width: 100%;
-    background: linear-gradient(146deg, #000000, #663f9d, #00008e);
+    background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
     border-radius: 24px;
@@ -148,14 +148,14 @@ body {
 
 .resultan-box {
     width: 100%;
-    background: linear-gradient(146deg, #000000, #008a8e, #663f9d);
+    background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
-    border-radius: 32px;
+    border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#kml, #contoh-soal {
+#contoh-soal {
     display: none;
 }
 

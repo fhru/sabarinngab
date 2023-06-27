@@ -167,7 +167,7 @@
                                         style="max-width: 350px;">
                                 </div>
                                 <div class="row mt-2 p-3">
-                                    <div class="text-center text-white fs-5">
+                                    <div class="text-center text-white-50 fs-5">
                                         Garis-garis gaya medan listrik tidak pernah berpotongan satu dengan yang
                                         lainnya.
                                     </div>
@@ -202,7 +202,7 @@
                                     <!-- <img src="assets/img-2_1.png" alt="" class="img-fluid" style="max-width: 350px;"> -->
                                 </div>
                                 <div class="row mt-2 p-3">
-                                    <div class="text-center text-white fs-5">
+                                    <div class="text-center text-white-50 fs-5">
                                         Garis-garis gaya medan listrik selalu mengarah radial ke luar menjauhi muatan
                                         positif, dan radial ke dalam menuju
                                         muatan negatif.
@@ -216,7 +216,7 @@
                                     <img src="assets/img-3.png" alt="" class="img-fluid" style="max-width: 350px;">
                                 </div>
                                 <div class="row mt-2 p-3">
-                                    <div class="text-center text-white fs-5">
+                                    <div class="text-center text-white-50 fs-5">
                                         Garis-garis gaya medan listrik rapat menunjukkan medan listrik yang kuat.
                                         Sebaliknya, garis-garis gaya medan listrik
                                         renggang menunjukkan medan listrik yang lemah.
@@ -368,7 +368,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="kml-box p-5 mt-5 fs-5" data-aos="fade-up" data-aos-duration="500">
+                <div class="p-4 mt-5 fs-5" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="text-white-50">
@@ -402,6 +402,57 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="resultan" class="mt-5">
+                    <div class="fs-2 text-white text-center mb-5">
+                        <div class="animation-container">
+                            <span class="typed-animation conthrax"
+                                data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
+                        </div>
+                    </div>
+                    <div class="row gx-5 mt-5 pt-3 justify-content-center">
+                        <div class="col-8 col-lg-8" data-aos="fade-up" data-aos-duration="500">
+                            <div class="swiper swiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="resultan-box p-5 text-white-50">
+                                            <div class="text-white text-center fs-4 fw-bold conthrax">
+                                                Resultan Medan Listrik Segaris
+                                            </div>
+                                            <div class="text-center py-4">
+                                                <img src="assets/segaris.jpg" alt="" class="img-fluid rounded">
+                                            </div>
+                                            <div class="text-center">
+                                                Penulisan sistematisnya yaitu:
+                                                <em class="fs-3 text-white">
+                                                    $${ E = k(\frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2})}$$
+                                                </em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="resultan-box p-5 text-white-50">
+                                            <div class="text-white text-center fs-4 fw-bold conthrax">
+                                                Resultan Medan Listrik Tak Segaris
+                                            </div>
+                                            <div class="text-center py-4">
+                                                <img src="assets/taksegaris.jpg" alt="" class="img-fluid rounded">
+                                            </div>
+                                            <div class="text-center">
+                                                Penulisan sistematisnya yaitu:
+                                                <em class="fs-4 text-white">
+                                                    $${ E_A = \sqrt{E_1^2 + E_2^2 + 2\times E_1 E_2 \cos\theta}
+                                                    }$$
+                                                </em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -410,22 +461,16 @@
         <div class="container py-5">
             <div class="menus2 mb-2">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-8 p-2 text-white">
+                    <div class="col-6 p-2 text-white">
                         <div class="row py-2 px-1 menu-box">
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside active conthrax"
-                                    onclick="toggleButton(this); rumus()">
-                                    Rumus
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="fs-4 text-center px-4 py-3 my-2 menu-box-inside conthrax"
+                                <div class="fs-4 text-center px-4 py-3 my-2 menu-box-inside conthrax "
                                     onclick="toggleButton(this); contohSoal()">
                                     Contoh Soal
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside conthrax"
+                                <div class="fs-4 px-4 py-3 my-2 menu-box-inside conthrax active"
                                     onclick="toggleButton(this); aplikasi()">
                                     Aplikasi
                                 </div>
@@ -438,55 +483,6 @@
 
             <div class="row mt-5">
                 <div class="col">
-                    <div id="resultan">
-                        <div class="fs-1 text-white text-center mb-5">
-                            <div class="animation-container">
-                                <span class="typed-animation conthrax"
-                                    data-strings='["RUMUS RESULTAN <br> MEDAN LISTRIK"]'></span>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mt-5 pt-3 justify-content-center">
-                            <div class="col-8 col-lg-8" data-aos="fade-up" data-aos-duration="500">
-                                <div class="swiper swiper2">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="resultan-box p-5 text-white-50">
-                                                <div class="text-white text-center fs-4 fw-bold conthrax">
-                                                    Resultan Medan Listrik Segaris
-                                                </div>
-                                                <div class="text-center py-4">
-                                                    <img src="assets/segaris.jpg" alt="" class="img-fluid rounded">
-                                                </div>
-                                                <div class="text-center">
-                                                    Penulisan sistematisnya yaitu:
-                                                    <em class="fs-3 text-white">
-                                                        $${ E = k(\frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2})}$$
-                                                    </em>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="resultan-box p-5 text-white-50">
-                                                <div class="text-white text-center fs-4 fw-bold conthrax">
-                                                    Resultan Medan Listrik Tak Segaris
-                                                </div>
-                                                <div class="text-center py-4">
-                                                    <img src="assets/taksegaris.jpg" alt="" class="img-fluid rounded">
-                                                </div>
-                                                <div class="text-center">
-                                                    Penulisan sistematisnya yaitu:
-                                                    <em class="fs-4 text-white">
-                                                        $${ E_A = \sqrt{E_1^2 + E_2^2 + 2\times E_1 E_2 \cos\theta}
-                                                        }$$
-                                                    </em>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div id="kml" class="kuat-medan-listrik mb-3 fs-6">
                         <div class="animation-container text-center text-white fs-1 py-4">
@@ -793,22 +789,13 @@
             document.getElementById('ubah3').style = 'display:block';
         }
 
-        function rumus() {
-            document.getElementById('resultan').style = 'display:block';
-            document.getElementById('kml').style = 'display:none';
-            document.getElementById('contoh-soal').style = 'display:none';
-
-        }
-
         function aplikasi() {
-            document.getElementById('resultan').style = 'display:none';
             document.getElementById('kml').style = 'display:block';
             document.getElementById('contoh-soal').style = 'display:none';
 
         }
 
         function contohSoal() {
-            document.getElementById('resultan').style = 'display:none';
             document.getElementById('kml').style = 'display:none';
             document.getElementById('contoh-soal').style = 'display:block';
         }
