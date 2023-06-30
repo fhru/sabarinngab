@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'conthraxsemibold';
@@ -19,7 +19,7 @@ body {
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Play', sans-serif;
 }
 
 .conthrax {
@@ -131,10 +131,15 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .kml-box-2 {
     width: 100%;
+    height: 100%;
     background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
@@ -238,7 +243,7 @@ body {
 .apl-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .lanjutan-img1 {
@@ -249,6 +254,10 @@ body {
 .modal-btn-4 {
     position: relative;
     bottom: 0px;
+}
+
+#generatorimg {
+    max-height: 450px;
 }
 
 #particles-js {
