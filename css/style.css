@@ -285,3 +285,16 @@ body {
         background-position: 0% 50%;
     }
 }
+
+
+
+@media all and (max-width: 480px) {
+    .fontsize-1 {
+        font-size: 44px !important;
+        line-height: 44px;
+    }
+
+    #particles-js {
+        display: none;
+    }
+}
