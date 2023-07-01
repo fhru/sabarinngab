@@ -102,33 +102,36 @@ body {
 .pengertian-box {
     display: block;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 32px;
 }
 
 .kml-box {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .kml-box3 {
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,11 +141,13 @@ body {
 .kml-box-2 {
     width: 100%;
     height: 100%;
-    background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
-    background-size: 180% 180%;
-    animation: gradient-animation 10s ease infinite;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 32px;
 }
 
 .swiper-pagination-bullet {
@@ -173,12 +178,13 @@ body {
 
 .menu-box {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 32px;
 }
 
 .menu-box-inside {
@@ -196,18 +202,22 @@ body {
 }
 
 .menu-box-inside.active {
-    background: rgba(255, 255, 255, 0.163);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.369),
+            rgba(255, 255, 255, 0.167));
 }
 
 .btn-glass {
     text-align: center;
     border-radius: 12px;
     padding: 12px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
     cursor: pointer;
 }
 
@@ -215,11 +225,12 @@ body {
     padding: 1rem;
     border-radius: 24px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     transition: .3s;
 }
 
