@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 @font-face {
-    font-family: 'conthraxsemibold';
-    src: url('../assets/conthrax-sb-webfont.woff2') format('woff2'),
-        url('../assets/conthrax-sb-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'conthraxsemibold';
+  src: url('../assets/conthrax-sb-webfont.woff2') format('woff2'),
+    url('../assets/conthrax-sb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 * {
-    font-family: 'Play', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 .conthrax {
-    font-family: 'conthraxsemibold', sans-serif;
+  font-family: 'conthraxsemibold', sans-serif;
 }
 
 /* .poppins {
@@ -30,285 +30,285 @@ body {
 } */
 
 .body {
-    width: 100%;
-    height: 100%;
-    background-color: #20182C;
-    background-image: radial-gradient(at 26% 0%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%),
-        radial-gradient(at 96% 94%, hsla(278, 100%, 68%, 0.43) 0px, transparent 50%);
+  width: 100%;
+  height: 100%;
+  background-color: #20182C;
+  background-image: radial-gradient(at 26% 0%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%),
+    radial-gradient(at 96% 94%, hsla(278, 100%, 68%, 0.43) 0px, transparent 50%);
 }
 
 .second-body {
-    width: 100%;
-    background-color: #20182C;
-    background-image:
-        radial-gradient(at 99% 0%, hsla(278, 100%, 68%, 0.43) 0px, transparent 50%);
+  width: 100%;
+  background-color: #20182C;
+  background-image:
+    radial-gradient(at 99% 0%, hsla(278, 100%, 68%, 0.43) 0px, transparent 50%);
 }
 
 .third-body {
-    width: 100%;
-    background-color: #20182C;
-    background-image:
-        radial-gradient(at 100% 100%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
+  width: 100%;
+  background-color: #20182C;
+  background-image:
+    radial-gradient(at 100% 100%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
 }
 
 .fourth-body {
-    width: 100%;
-    background-color: #20182C;
-    background-image:
-        radial-gradient(at 20% 100%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%),
-        radial-gradient(at 99% 0%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
+  width: 100%;
+  background-color: #20182C;
+  background-image:
+    radial-gradient(at 20% 100%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%),
+    radial-gradient(at 99% 0%, hsla(266, 100%, 70%, 0.63) 0px, transparent 50%);
 }
 
 .fifth-body {
-    width: 100%;
-    background-color: #20182C;
-    background-image: radial-gradient(at 20% 0%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%)
+  width: 100%;
+  background-color: #20182C;
+  background-image: radial-gradient(at 20% 0%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%)
 }
 
 .sixth-body {
-    width: 100%;
-    background-color: hsla(0, 0%, 0%, 1);
-    background-image:
-        radial-gradient(at 100% 0%, hsla(240, 98%, 70%, 0.59) 0px, transparent 50%),
-        radial-gradient(at 10% 55%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%);
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image:
+    radial-gradient(at 100% 0%, hsla(240, 98%, 70%, 0.59) 0px, transparent 50%),
+    radial-gradient(at 10% 55%, hsla(224, 100%, 50%, 0.5) 0px, transparent 50%);
 }
 
 .main-body {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .fontsize-1 {
-    font-size: 64px;
-    line-height: 64px;
+  font-size: 64px;
+  line-height: 64px;
 }
 
 .ingfo {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .heroimg {
-    mix-blend-mode: overlay !important;
-    width: 90%;
+  mix-blend-mode: overlay !important;
+  width: 90%;
 }
 
 .user-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .pengertian-box {
-    display: block;
-    width: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 32px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 32px;
 }
 
 .kml-box {
-    width: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    border-radius: 32px;
+  border-radius: 32px;
 }
 
 .kml-box3 {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .kml-box-2 {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    border-radius: 32px;
+  border-radius: 32px;
 }
 
 .swiper-pagination-bullet {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #858585 !important;
+  background-color: #858585 !important;
 }
 
 .input {
-    border-radius: 10px;
-    padding: 8px;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 .resultan-box {
-    width: 100%;
-    background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
-    background-size: 180% 180%;
-    animation: gradient-animation 10s ease infinite;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  background: linear-gradient(146deg, #000000, #663f9d, #663f9d);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #contoh-soal {
-    display: none;
+  display: none;
 }
 
 .menu-box {
-    width: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    border-radius: 32px;
+  border-radius: 32px;
 }
 
 .menu-box-inside {
-    border-radius: 16px;
-    transition: .3s ease-in;
-    display: flex;
-    justify-content: center;
+  border-radius: 16px;
+  transition: .3s ease-in;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-box-inside:hover {
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.163);
-    cursor: pointer;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.163);
+  cursor: pointer;
 
 }
 
 .menu-box-inside.active {
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.369),
-            rgba(255, 255, 255, 0.167));
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.369),
+      rgba(255, 255, 255, 0.167));
 }
 
 .btn-glass {
-    text-align: center;
-    border-radius: 12px;
-    padding: 12px;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 12px;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    border-radius: 16px;
-    cursor: pointer;
+  border-radius: 16px;
+  cursor: pointer;
 }
 
 .kartu {
-    padding: 1rem;
-    border-radius: 24px;
-    height: 100%;
-    background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.25),
-            rgba(255, 255, 255, 0.05));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 24px;
+  height: 100%;
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.05));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    transition: .3s;
+  transition: .3s;
 }
 
 .kartu:hover {
-    background: rgba(255, 255, 255, 0.214);
-    transform: scale(1);
+  background: rgba(255, 255, 255, 0.214);
+  transform: scale(1);
 }
 
 .gauss-img {
-    border-radius: 44px;
+  border-radius: 44px;
 }
 
 .fluks-img {
-    mix-blend-mode: screen !important;
-    max-width: 200px;
+  mix-blend-mode: screen !important;
+  max-width: 200px;
 }
 
 .apl-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .lanjutan-img1 {
-    max-width: 250px;
-    width: 100%;
+  max-width: 250px;
+  width: 100%;
 }
 
 .modal-btn-4 {
-    position: relative;
-    bottom: 0px;
+  position: relative;
+  bottom: 0px;
 }
 
 #generatorimg {
-    max-height: 450px;
+  max-height: 450px;
 }
 
 #particles-js {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    opacity: 0.7;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.7;
 }
 
 
 @keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
 
 @media all and (max-width: 480px) {
-    .fontsize-1 {
-        font-size: 44px !important;
-        line-height: 44px;
-    }
+  .fontsize-1 {
+    font-size: 44px !important;
+    line-height: 44px;
+  }
 
-    #particles-js {
-        display: none;
-    }
+  #particles-js {
+    display: none;
+  }
 }
