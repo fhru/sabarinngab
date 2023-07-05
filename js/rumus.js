@@ -2,23 +2,21 @@ function convert1() {
     var muatan = document.getElementById("input_muatan").value;
     var jarak = document.getElementById("input_jarak1").value;
 
-    var jarak_kem = jarak / 100;
-
     var k = 9000000000;
     var q = muatan;
-    var r = jarak_kem * jarak_kem;
+    var r = jarak * jarak;
 
     var kuat_medan_listrik = k * q / r;
 
     if(kuat_medan_listrik < 0){
-        var arah = "kiri";
+        var arah = "Mendekati / menuju muatan (-)";
     }else if(kuat_medan_listrik > 0){
-        var arah = "kanan";
+        var arah = "Menjauhi / meninggalkan muatan (+)";
     }else {
         var arah = "error";
     }
 
-    document.getElementById("hasil-convert1").innerHTML = kuat_medan_listrik+"N/C";
+    document.getElementById("hasil-convert1").innerHTML = kuat_medan_listrik+" N/C";
     document.getElementById("arah-arus").innerHTML = arah;
 }
 
@@ -36,7 +34,7 @@ function convert2() {
     var q = muatan;
 
 
-    document.getElementById("hasil-convert2").innerHTML = q +"C";
+    document.getElementById("hasil-convert2").innerHTML = q +" C";
 }
 
 function convert3() {
@@ -52,5 +50,5 @@ function convert3() {
     // var kuat_medan_listrik = k * q / r;
 
 
-    document.getElementById("hasil-convert3").innerHTML = r + "M";
+    document.getElementById("hasil-convert3").innerHTML = r + " m";
 }
