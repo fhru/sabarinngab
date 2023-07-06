@@ -1128,31 +1128,32 @@
                 </div>
               </div>
 
-              <!-- Mencari jarak -->
-              <div id="ubah3" class="col-12 col-lg-7" style="display: none;">
-                <div class="kml-box p-4 p-lg-5 text-white-50">
-                  rumus <span class="text-white">mencari jarak</span> yaitu :
-                  <div class="text-center text-white fs-2 my-3">
-                    <em>r = &#8730; k . q / E </em>
-                  </div>
-                  <div class="text-center">
-                    <form id="form" onsubmit="return false;">
-                      Masukkan muatan listrik :
-                      <br>
-                      <input class="input" type="text" id="ingfo_muatan" placeholder="muatan" />
-                      <br>
-                      <br>
-                      Masukkan kuat medan listrik :
-                      <br>
-                      <input class="input" type="text" id="kuat_medan_listrik" placeholder="kuat listrik" />
-                      <br>
-                      <br>
-                      <div class="mt-4 d-flex justify-content-center">
-                        <button type="submit" onclick="convert3()" class="btn1" type="button">
-                          <strong>SUBMIT</strong>
-                          <div id="container-stars">
-                            <div id="stars"></div>
-                          </div>
+                            <!-- Mencari jarak -->
+                            <div id="ubah3" class="col-12 col-lg-7" style="display: none;">
+                                <div class="kml-box p-4 p-lg-5 text-white-50">
+                                    Rumus <span class="text-white">mencari jarak</span> yaitu :
+                                    <div class="text-center text-white fs-2 my-3">
+                                        <em>r = &#8730; (k . Q / E) </em>
+                                    </div>
+                                    <div class="text-center">
+                                        <form id="form" onsubmit="return false;">
+                                            Masukkan muatan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="ingfo_muatan" placeholder="muatan (C)" />
+                                            <br>
+                                            <br>
+                                            Masukkan kuat medan listrik :
+                                            <br>
+                                            <input class="input" type="text" id="kuat_medan_listrik"
+                                                placeholder="kuat listrik (N/C)" />
+                                            <br>
+                                            <br>
+                                            <div class="mt-4 d-flex justify-content-center">
+                                                <button type="submit" onclick="convert3()" class="btn1" type="button">
+                                                    <strong>SUBMIT</strong>
+                                                    <div id="container-stars">
+                                                        <div id="stars"></div>
+                                                    </div>
 
                           <div id="glow">
                             <div class="circle"></div>
@@ -1191,101 +1192,168 @@
             </div>
           </div>
 
-          <div id="contoh-soal">
-            <div class="animation-container text-center text-white fs-1 py-2">
-              <span class="typed-animation conthrax" data-strings='["Contoh Soal"]'></span>
-            </div>
-            <div class="row justify-content-center align-items-center">
-              <div class="col-lg-6">
-                <div class="kml-box p-5 mt-4 text-white ">
-                  <span class="fs-3">1.</span> Sebuah muatan uji dengan besar muatan 15 x
-                  10<sup>-5</sup>
-                  diletakkan dalam sebuah
-                  medan
-                  listrik. Apabila gaya yang bekerja pada
-                  muatan uji sebesar 0,6 N. berapa besar medan listrik pada muatan uji?
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="accordion mt-3" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Penyelesaian
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Diketahui
-                        <br>
-                        F = 0,6 N
-                        <br>
-                        Q = 15 x 10 <sup>-5</sup>
-                        <br>
-                        <br>
-                        Penyelesaian
-                        <br>
-                        E = F/q
-                        <br>
-                        E = 0,6 / 15 x 10 <sup>-5</sup>
-                        <br>
-                        E = 4000 N/C
-                        <br>
-                        <br>
-                        Jadi, besar medan listrik pada muatan uji adalah 4000 N/C
-                      </div>
+                    <div id="contoh-soal">
+                        <div class="animation-container text-center text-white fs-1 py-2">
+                            <span class="typed-animation conthrax" data-strings='["Contoh Soal"]'></span>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <!-- Contoh soal no 1 -->
+                            <div class="col-lg-6">
+                                <div class="kml-box p-5 mt-4 text-white ">
+                                    <span class="fs-3">1.</span> Sebuah muatan uji dengan besar muatan 15 x
+                                    10<sup>-5</sup>
+                                    diletakkan dalam sebuah
+                                    medan
+                                    listrik. Apabila gaya yang bekerja pada
+                                    muatan uji sebesar 0,6 N. berapa besar medan listrik pada muatan uji?
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="accordion mt-3" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button acc-btn collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Penyelesaian
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Diketahui
+                                                <br>
+                                                F = 0,6 N
+                                                <br>
+                                                q = 15 x 10<sup>-5</sup> C
+                                                <br>
+                                                <br>
+                                                Penyelesaian
+                                                <br>
+                                                E = F/q
+                                                <br>
+                                                <br>
+                                                E = 0,6 / 15 x 10 <sup>-5</sup>
+                                                <br>
+                                                E = 4000 N/C
+                                                <br>
+                                                <br>
+                                                Jadi, besar medan listrik pada muatan uji adalah 4000 N/C
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contoh soal no 2 -->
+                            <div class="col-lg-6">
+                                <div class="kml-box p-5 mt-4 text-white ">
+                                    <span class="fs-3">2.</span> Hitunglah medan listrik
+                                     pada radius 1 cm, 2 cm dan 3 cm 
+                                     dari sebuah muatan titik dengan besar muatan 4 μC!
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="accordion mt-3" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button acc-btn collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Penyelesaian
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Diketahui
+                                                <br>
+                                                Q = 4 μC = 4 x 10<sup>-6</sup>C
+                                                <br>
+                                                r<sub>1</sub> = 1 cm = 1 x 10<sup>-2</sup> m
+                                                <br>
+                                                r<sub>2</sub> = 2 cm = 2 x 10<sup>-2</sup> m
+                                                <br>
+                                                r<sub>3</sub> = 3 cm = 3 x 10<sup>2</sup> m
+                                                <br>
+                                                k = 9 x 10<sup>9</sup> Nm<sup>2</sup>/C<sup>2</sup> 
+                                                <br>
+                                                <br>
+                                                Penyelesaian
+                                                <br>
+                                                E = k.Q/r<sup>2</sup>
+                                                <br>
+                                                <br>
+                                                E<sub>1</sub> = 9 x 10<sup>9</sup> . 4 x 10<sup>-6</sup>/(1 x 10<sup>-2</sup>)<sup>2</sup> = 36 x 10<sup>7</sup> N/C 
+                                                <br>
+                                                E<sub>2</sub> = 9 x 10<sup>9</sup> . 4 x 10<sup>-6</sup>/(2 x 10<sup>-2</sup>)<sup>2</sup> = 9 x 10<sup>7</sup> N/C 
+                                                <br>
+                                                E<sub>3</sub> = 9 x 10<sup>9</sup> . 4 x 10<sup>-6</sup>/(3 x 10<sup>-2</sup>)<sup>2</sup> = 4 x 10<sup>7</sup> N/C 
+                                                <br>
+                                                <!-- <br> -->
+                                                <!-- Jadi, besar medan listrik pada muatan uji adalah 4000 N/C -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contoh soal no 3 -->
+                            <div class="col-lg-6">
+                                <div class="kml-box p-5 mt-4 text-white ">
+                                    <span class="fs-3">3.</span> Titik P diletakkan di dekat suatu muatan 
+                                    titik sebesar -7 × 10<sup>-8</sup> C. Berapakah jarak titik P dari muatan tersebut 
+                                    sehingga terdapat kuat medan listrik sebesar -17.5 N/C pada titik P?
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="accordion mt-3" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button acc-btn collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Penyelesaian
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Diketahui
+                                                <br>
+                                                Q = -7 x 10<sup>-8</sup>C
+                                                <br>
+                                                E = -17.5 N/C
+                                                <br>
+                                                k = 9 x 10<sup>9</sup> Nm<sup>2</sup>/C<sup>2</sup> 
+                                                <br>
+                                                <br>
+                                                Penyelesaian
+                                                <br>
+                                                r = √ (k . Q / E)
+                                                <br>
+                                                <br>
+                                                r = √ (9 x 10<sup>9</sup> . -7 x 10<sup>-8</sup> / -17.5)
+                                                <br>
+                                                r = √ (-63 × 10<sup>1</sup> / -17.5)
+                                                <br>
+                                                r = √ (-630 / -17.5)
+                                                <br>
+                                                r = √ (36)
+                                                <br>
+                                                r = 6 m
+                                                <br>
+                                                <br>
+                                                Jadi, jarak titik P dari muatan tersebut 6 m
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="kml-box p-5 mt-4 text-white ">
-                  <span class="fs-3">1.</span> Sebuah muatan uji dengan besar muatan 15 x
-                  10<sup>-5</sup>
-                  diletakkan dalam sebuah
-                  medan
-                  listrik. Apabila gaya yang bekerja pada
-                  muatan uji sebesar 0,6 N. berapa besar medan listrik pada muatan uji?
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="accordion mt-3" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Penyelesaian
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Diketahui
-                        <br>
-                        F = 0,6 N
-                        <br>
-                        Q = 15 x 10 <sup>-5</sup>
-                        <br>
-                        <br>
-                        Penyelesaian
-                        <br>
-                        E = F/q
-                        <br>
-                        E = 0,6 / 15 x 10 <sup>-5</sup>
-                        <br>
-                        E = 4000 N/C
-                        <br>
-                        <br>
-                        Jadi, besar medan listrik pada muatan uji adalah 4000 N/C
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
     </div>
     <div class="footer py-3">
