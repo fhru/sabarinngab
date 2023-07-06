@@ -29,6 +29,9 @@ function checkAnswers() {
         if (!selectedOption) {
             allOptionsFilled = false;
             var errorMessage = group.querySelector('.error-message');
+            var errmsg2 = document.getElementById("error-iya");
+            errmsg2.innerHTML = "Isi Semua Jawaban Terlebih Dahulu!"
+            errmsg2.classList.add('alert');
             errorMessage.innerHTML = "Pilih salah satu jawaban.";
             errorMessage.classList.add('alert'); // Menambahkan kelas "alert"
         }
@@ -52,6 +55,7 @@ function checkAnswers() {
 
     var result = document.getElementById('result');
     result.innerHTML = "Skor Anda: " + score * 10;
+    result.classList.add('alert'); 
 
     // Menonaktifkan input radio setelah tombol "Submit" ditekan
     var radioInputs = document.querySelectorAll('input[type="radio"]');
@@ -63,3 +67,14 @@ function checkAnswers() {
     var submitButton = document.querySelector('.submit-btn');
     submitButton.disabled = true;
 }
+
+window.addEventListener('scroll', function () {
+    var navbar = document.querySelector('.navbar');
+
+    // Mengecek apakah pengguna telah menscroll atau belum
+    if (window.scrollY === 0) {
+        navbar.classList.remove('navbar-scrolled');
+    } else {
+        navbar.classList.add('navbar-scrolled');
+    }
+});
