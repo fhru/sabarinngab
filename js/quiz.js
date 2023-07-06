@@ -63,3 +63,14 @@ function checkAnswers() {
     var submitButton = document.querySelector('.submit-btn');
     submitButton.disabled = true;
 }
+
+window.addEventListener('scroll', function () {
+    var navbar = document.querySelector('.navbar');
+
+    // Mengecek apakah pengguna telah menscroll atau belum
+    if (window.scrollY === 0) {
+        navbar.classList.remove('navbar-scrolled');
+    } else {
+        navbar.classList.add('navbar-scrolled');
+    }
+});
