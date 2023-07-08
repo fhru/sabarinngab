@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team</title>
+  <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/9ba83b78d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="body">
+    <div class="container">
+      <div class="header py-3">
+        <nav class="navbar fixed-top">
+          <div class="container">
+            <div class="row gap-2 m-auto fs-5 align-items-center py-2">
+              <a href="#" class="col py-2 px-4 nav-items rounded-4 aktip">
+                Team
+              </a>
+              <a href="index.html" class="col py-3 px-4 nav-items rounded-4">
+                <i class="fa-solid fa-bolt fa-xl"></i>
+              </a>
+              <a href="quiz.html" class="col py-2 px-4 nav-items rounded-4 ">
+                Quiz
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="kosong"></div>
+      </div>
+
+      <div class="text-center text-white meet py-4 conthrax">
+        Meet Our Team
+      </div>
+
+      <div class="row g-4 justify-content-center pb-4">
+        <div class="col-lg-4">
+          <div class="member-box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div id="member1" class="avatar-img"></div>
+            <div class="fs-3 fw-bold text-center text-white nama mt-4 mb-3">
+              Fahru Rahman
+              <br>
+              <div class="fs-6 text-white-50">50422490</div>
+            </div>
+            <div class="fs-5 text-white-50 text-center">
+              Santai dulu gak sih
+            </div>
+          </div>
+        </div>
+        <!-- member2 -->
+        <div class="col-lg-4">
+          <div class="member-box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div id="member2" class="avatar-img"></div>
+            <div class="fs-3 fw-bold text-center text-white nama mt-4 mb-3">
+              Ahmad Fadhilah
+              <br>
+              <div class="fs-6 text-white-50">50422120</div>
+            </div>
+            <div class="fs-5 text-white-50 text-center">
+              Ngoding juga
+            </div>
+          </div>
+        </div>
+        <!-- member 3 -->
+        <div class="col-lg-4">
+          <div class="member-box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div id="member3" class="avatar-img"></div>
+            <div class="fs-3 fw-bold text-center text-white nama mt-4 mb-3">
+              Kartika Sari
+              <br>
+              <div class="fs-6 text-white-50">50422020</div>
+            </div>
+            <div class="fs-5 text-white-50 text-center">
+              Nyiapin Materi
+            </div>
+          </div>
+        </div>
+        <!-- member 4 -->
+        <div class="col-lg-4">
+          <div class="member-box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div id="member4" class="avatar-img"></div>
+            <div class="fs-3 fw-bold text-center text-white nama mt-4 mb-3">
+              Mohd Zimar Alwan
+              <br>
+              <div class="fs-6 text-white-50">50422917</div>
+            </div>
+            <div class="fs-5 text-white-50 text-center">
+              Bantu bantu materi
+            </div>
+          </div>
+        </div>
+        <!-- member 5 -->
+        <div class="col-lg-4">
+          <div class="member-box" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+            <div id="member5" class="avatar-img"></div>
+            <div class="fs-3 fw-bold text-center text-white nama mt-4 mb-3">
+              MUHAMMAD DHIAUL FURQAN
+              <br>
+              <div class="fs-6 text-white-50">51422013</div>
+            </div>
+            <div class="fs-5 text-white-50 text-center">
+              ngapain ya?
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="boostrap/js/bootstrap.min.js"></script>
+  <script src="js/vanilla-tilt.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('.navbar');
+
+      // Mengecek apakah pengguna telah menscroll atau belum
+      if (window.scrollY === 0) {
+        navbar.classList.remove('navbar-scrolled');
+      } else {
+        navbar.classList.add('navbar-scrolled');
+      }
+    });
+  </script>
+</body>
+
+</html>
