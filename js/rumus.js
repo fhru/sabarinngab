@@ -24,11 +24,9 @@ function convert2() {
     var kuat = document.getElementById("input_kuat_listrik").value;
     var jarak = document.getElementById("input_jarak2").value;
 
-    var jarak_kem = jarak / 100;
-
     var k = 9000000000;
     var E = kuat;
-    var r = jarak_kem * jarak_kem;
+    var r = jarak * jarak;
 
     var muatan = E * r / k;
     var q = muatan;
